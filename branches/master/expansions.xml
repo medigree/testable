@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="281542ff-8644-4c49-acd8-f129d843cdb0"/>
+  <id value="e481fe2a-3fd2-4300-83a0-f1801685f0f9"/>
   <meta>
-    <lastUpdated value="2022-10-23T19:55:41.199+00:00"/>
+    <lastUpdated value="2022-10-23T19:56:59.994+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -304,7 +304,7 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="http://example.com/fhir/example/ValueSet/FoodAllergyVS"/>
+    <fullUrl value="http://example.com/fhir/testable/ValueSet/FoodAllergyVS"/>
     <resource>
       <ValueSet>
         <id value="FoodAllergyVS"/>
@@ -416,12 +416,12 @@
             </table>
           </div>
         </text>
-        <url value="http://example.com/fhir/example/ValueSet/FoodAllergyVS"/>
+        <url value="http://example.com/fhir/testable/ValueSet/FoodAllergyVS"/>
         <version value="0.1.0-test"/>
         <name value="FoodAllergyVS"/>
         <title value="Food Allergies"/>
         <status value="active"/>
-        <date value="2022-10-23T19:55:41+00:00"/>
+        <date value="2022-10-23T19:56:59+00:00"/>
         <publisher value="xxxYour Work Group"/>
         <contact>
           <telecom>
@@ -437,8 +437,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:eb8188db-e2f3-403d-a734-72ed9e15c545"/>
-          <timestamp value="2022-10-23T19:55:55+00:00"/>
+          <identifier value="urn:uuid:48319a6f-2322-489c-a47d-6c0a387b63ca"/>
+          <timestamp value="2022-10-23T19:57:13+00:00"/>
           <total value="11"/>
           <parameter>
             <name value="excludeNested"/>

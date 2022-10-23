@@ -3,7 +3,7 @@
   "id": "MyPeanutAllergy",
   "meta": {
     "profile": [
-      "http://example.com/fhir/example/StructureDefinition/FoodAllergy"
+      "http://example.com/fhir/testable/StructureDefinition/FoodAllergy"
     ]
   },
   "text": {

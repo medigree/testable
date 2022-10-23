@@ -11,9 +11,9 @@
   fhir:Resource.id [ fhir:value "MyPeanutAllergy"];
   fhir:Resource.meta [
      fhir:Meta.profile [
-       fhir:value "http://example.com/fhir/example/StructureDefinition/FoodAllergy";
+       fhir:value "http://example.com/fhir/testable/StructureDefinition/FoodAllergy";
        fhir:index 0;
-       fhir:link <http://example.com/fhir/example/StructureDefinition/FoodAllergy>
+       fhir:link <http://example.com/fhir/testable/StructureDefinition/FoodAllergy>
      ]
   ];
   fhir:DomainResource.text [

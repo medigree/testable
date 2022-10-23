@@ -7,7 +7,7 @@
   "profiles": {
     "AllergyIntolerance": [
       {
-        "url": "http://example.com/fhir/example/StructureDefinition/FoodAllergy",
+        "url": "http://example.com/fhir/testable/StructureDefinition/FoodAllergy",
         "title": "Food Allergy"
       }
     ]

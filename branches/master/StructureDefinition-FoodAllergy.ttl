@@ -21,12 +21,12 @@
      fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category" ];
      fhir:Extension.valueCode [ fhir:value "patient" ]
   ];
-  fhir:StructureDefinition.url [ fhir:value "http://example.com/fhir/example/StructureDefinition/FoodAllergy"];
+  fhir:StructureDefinition.url [ fhir:value "http://example.com/fhir/testable/StructureDefinition/FoodAllergy"];
   fhir:StructureDefinition.version [ fhir:value "0.1.0-test"];
   fhir:StructureDefinition.name [ fhir:value "FoodAllergy"];
   fhir:StructureDefinition.title [ fhir:value "Food Allergy"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2022-10-23T19:55:41+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2022-10-23T19:56:59+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "xxxYour Work Group"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
@@ -954,8 +954,8 @@
        fhir:ElementDefinition.binding [
          fhir:ElementDefinition.binding.strength [ fhir:value "extensible" ];
          fhir:ElementDefinition.binding.valueSet [
-           fhir:value "http://example.com/fhir/example/ValueSet/FoodAllergyVS";
-           fhir:link <http://example.com/fhir/example/ValueSet/FoodAllergyVS>
+           fhir:value "http://example.com/fhir/testable/ValueSet/FoodAllergyVS";
+           fhir:link <http://example.com/fhir/testable/ValueSet/FoodAllergyVS>
          ]
        ];
        fhir:ElementDefinition.mapping [
@@ -1979,8 +1979,8 @@
        fhir:ElementDefinition.binding [
          fhir:ElementDefinition.binding.strength [ fhir:value "extensible" ];
          fhir:ElementDefinition.binding.valueSet [
-           fhir:value "http://example.com/fhir/example/ValueSet/FoodAllergyVS";
-           fhir:link <http://example.com/fhir/example/ValueSet/FoodAllergyVS>
+           fhir:value "http://example.com/fhir/testable/ValueSet/FoodAllergyVS";
+           fhir:link <http://example.com/fhir/testable/ValueSet/FoodAllergyVS>
          ]
        ]
      ], [
