@@ -26,7 +26,7 @@
   fhir:StructureDefinition.name [ fhir:value "FoodAllergy"];
   fhir:StructureDefinition.title [ fhir:value "Food Allergy"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2022-10-23T19:55:23+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2022-10-23T19:55:41+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "xxxYour Work Group"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
