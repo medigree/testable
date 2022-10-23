@@ -2,10 +2,8 @@ This Implementation Guide provides the core data structure for exchanging food a
 
 ### Purpose
 
-
-
 ### Context
-Food allergy is an immune system reaction that occurs soon after eating a certain food. Even a tiny amount of the allergy-causing food can trigger signs and symptoms such as digestive problems, hives or swollen airways. In some people, a food allergy can cause severe symptoms or even a life-threatening reaction known as anaphylaxis.  
+Food allergy is an immune system reaction that occurs soon after eating a certain food. Even a tiny amount of the allergy-causing food can trigger signs and symptoms such as digestive problems, hives or swollen airways. In some people, a food allergy can cause severe symptoms or even a life-threatening reaction known as anaphylaxis. 
 
 Food allergy affects an estimated 6 to 8 percent of children under age 3 and up to 3 percent of adults. While there's no cure, some children outgrow their food allergy as they get older.  
 
