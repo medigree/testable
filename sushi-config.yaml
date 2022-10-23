@@ -7,7 +7,7 @@
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 
 
-id: my-ig
+id: testable-ig
 canonical: http://example.com/fhir/example
 url: http://example.com/fhir/example
 name: ExampleIG
@@ -129,7 +129,7 @@ jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 "World"
 # with supported extensions (e.g., .md/.xml) will be treated as
 # sub-pages.
 pages:
-  index.md:
+  index.xml:
     title: Home
   testable_specs.md:
     title: Testable Specifications
