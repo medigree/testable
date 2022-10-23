@@ -1,5 +1,33 @@
 [
   {
+    "id": "FoodAllergy",
+    "type": "StructureDefinition",
+    "url": "http://example.com/fhir/example/StructureDefinition/FoodAllergy",
+    "version": "0.1.0-test",
+    "name": "FoodAllergy"
+  },
+  {
+    "id": "FoodAllergyModel",
+    "type": "StructureDefinition",
+    "url": "http://example.com/fhir/example/StructureDefinition/FoodAllergyModel",
+    "version": "0.1.0-test",
+    "name": "FoodAllergyModel"
+  },
+  {
+    "id": "FoodAllergyVS",
+    "type": "ValueSet",
+    "url": "http://example.com/fhir/example/ValueSet/FoodAllergyVS",
+    "version": "0.1.0-test",
+    "name": "FoodAllergyVS"
+  },
+  {
+    "id": "food-allergy-questionnaire",
+    "type": "Questionnaire",
+    "url": "http://openhie.org/fhir/food-allergy/Questionnaire/food-allergy-questionnaire",
+    "version": "0.1.0-test",
+    "name": "FoodAllergyQuestionnaire"
+  },
+  {
     "id": "xxexample.fhir.uv.myig",
     "type": "ImplementationGuide",
     "url": "http://xxsomewhere.org/fhir/myig/ImplementationGuide/xxexample.fhir.uv.myig",

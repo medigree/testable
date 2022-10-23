@@ -1,16 +1,46 @@
 ﻿XXYourComputableMyIGNameHere : Validation Results
 =========================================
 
-err = 1, warn = 4, info = 0
+err = 9, warn = 6, info = 0
 IG Publisher Version: 1.2.10
-Generated Sun Oct 23 17:08:55 UTC 2022. FHIR version 4.0.1 for xxexample.fhir.uv.myig#0.1.0-test (canonical = http://xxsomewhere.org/fhir/myig)
- Build Errors : 0 / 4 / 0
- /github/workspace/input/myig : 1 / 0 / 1
+Generated Sun Oct 23 19:55:43 UTC 2022. FHIR version 4.0.1 for xxexample.fhir.uv.myig#0.1.0-test (canonical = http://xxsomewhere.org/fhir/myig)
+ Build Errors : 11 / 5 / 0
+ /github/workspace/fsh-generated/resources/AllergyIntolerance-MyPeanutAllergy : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Questionnaire-food-allergy-questionnaire : 2 / 0 / 4
+ /github/workspace/fsh-generated/resources/StructureDefinition-FoodAllergy : 2 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-FoodAllergyModel : 2 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-FoodAllergyVS : 2 / 1 / 1
+ /github/workspace/input/myig : 0 / 0 / 1
 </table>
 == n/a ==
+ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource AllergyIntolerance/MyPeanutAllergy.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource AllergyIntolerance/MyPeanutAllergy.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: /github/workspace/output/Questionnaire-food-allergy-questionnaire-form.html: Unable to read attribute on <div> at line 215 column 71
+ERROR: /github/workspace/output/ValueSet-food-allergy-questionnaire_vs-food-allergy-clinstatus-cont.html#/html/body/div/div/div/div/div/ul/li/a at Line 171, column 8: The link 'ValueSet-food-allergy-questionnaire_vs-food-allergy-clinstatus-cont.xml.html' for "XML" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-food-allergy-questionnaire_vs-food-allergy-clinstatus-cont.html#/html/body/div/div/div/div/div/ul/li/a at Line 178, column 8: The link 'ValueSet-food-allergy-questionnaire_vs-food-allergy-clinstatus-cont.json.html' for "JSON" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-food-allergy-questionnaire_vs-food-allergy-clinstatus-cont.html#/html/body/div/div/div/div/div/ul/li/a at Line 185, column 8: The link 'ValueSet-food-allergy-questionnaire_vs-food-allergy-clinstatus-cont.ttl.html' for "TTL" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-food-allergy-questionnaire_vs-food-allergy-cont.html#/html/body/div/div/div/div/div/ul/li/a at Line 171, column 8: The link 'ValueSet-food-allergy-questionnaire_vs-food-allergy-cont.xml.html' for "XML" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-food-allergy-questionnaire_vs-food-allergy-cont.html#/html/body/div/div/div/div/div/ul/li/a at Line 178, column 8: The link 'ValueSet-food-allergy-questionnaire_vs-food-allergy-cont.json.html' for "JSON" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-food-allergy-questionnaire_vs-food-allergy-cont.html#/html/body/div/div/div/div/div/ul/li/a at Line 185, column 8: The link 'ValueSet-food-allergy-questionnaire_vs-food-allergy-cont.ttl.html' for "TTL" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-food-allergy-questionnaire_vs-food-allergy-verifstatus-cont.html#/html/body/div/div/div/div/div/ul/li/a at Line 171, column 8: The link 'ValueSet-food-allergy-questionnaire_vs-food-allergy-verifstatus-cont.xml.html' for "XML" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-food-allergy-questionnaire_vs-food-allergy-verifstatus-cont.html#/html/body/div/div/div/div/div/ul/li/a at Line 178, column 8: The link 'ValueSet-food-allergy-questionnaire_vs-food-allergy-verifstatus-cont.json.html' for "JSON" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-food-allergy-questionnaire_vs-food-allergy-verifstatus-cont.html#/html/body/div/div/div/div/div/ul/li/a at Line 185, column 8: The link 'ValueSet-food-allergy-questionnaire_vs-food-allergy-verifstatus-cont.ttl.html' for "TTL" cannot be resolved
 WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
 WARNING: 2: The HTML fragment 'cross-version-analysis.xhtml' is not included anywhere in the produced implementation guide
 WARNING: 3: The HTML fragment 'dependency-table.xhtml' is not included anywhere in the produced implementation guide
 WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
+== fsh-generated/resources/AllergyIntolerance-MyPeanutAllergy.json ==
+== fsh-generated/resources/Questionnaire-food-allergy-questionnaire.json ==
+ERROR: Questionnaire.where(url = 'http://openhie.org/fhir/food-allergy/Questionnaire/food-allergy-questionnaire'): Conformance resource /github/workspace/fsh-generated/resources/Questionnaire-food-allergy-questionnaire.json - the canonical URL (http://xxsomewhere.org/fhir/myig/Questionnaire/food-allergy-questionnaire) does not match the URL (http://openhie.org/fhir/food-allergy/Questionnaire/food-allergy-questionnaire)
+ERROR: /github/workspace/fsh-generated/resources/Questionnaire-food-allergy-questionnaire: URL Mismatch http://xxsomewhere.org/fhir/myig/Questionnaire/food-allergy-questionnaire vs http://openhie.org/fhir/food-allergy/Questionnaire/food-allergy-questionnaire
+== fsh-generated/resources/StructureDefinition-FoodAllergy.json ==
+ERROR: StructureDefinition.where(url = 'http://example.com/fhir/example/StructureDefinition/FoodAllergy'): Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-FoodAllergy.json - the canonical URL (http://xxsomewhere.org/fhir/myig/StructureDefinition/FoodAllergy) does not match the URL (http://example.com/fhir/example/StructureDefinition/FoodAllergy)
+ERROR: /github/workspace/fsh-generated/resources/StructureDefinition-FoodAllergy: URL Mismatch http://xxsomewhere.org/fhir/myig/StructureDefinition/FoodAllergy vs http://example.com/fhir/example/StructureDefinition/FoodAllergy
+== fsh-generated/resources/StructureDefinition-FoodAllergyModel.json ==
+ERROR: StructureDefinition.where(url = 'http://example.com/fhir/example/StructureDefinition/FoodAllergyModel'): Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-FoodAllergyModel.json - the canonical URL (http://xxsomewhere.org/fhir/myig/StructureDefinition/FoodAllergyModel) does not match the URL (http://example.com/fhir/example/StructureDefinition/FoodAllergyModel)
+ERROR: /github/workspace/fsh-generated/resources/StructureDefinition-FoodAllergyModel: URL Mismatch http://xxsomewhere.org/fhir/myig/StructureDefinition/FoodAllergyModel vs http://example.com/fhir/example/StructureDefinition/FoodAllergyModel
+== fsh-generated/resources/ValueSet-FoodAllergyVS.json ==
+ERROR: ValueSet.where(url = 'http://example.com/fhir/example/ValueSet/FoodAllergyVS'): Conformance resource /github/workspace/fsh-generated/resources/ValueSet-FoodAllergyVS.json - the canonical URL (http://xxsomewhere.org/fhir/myig/ValueSet/FoodAllergyVS) does not match the URL (http://example.com/fhir/example/ValueSet/FoodAllergyVS)
+WARNING: ValueSet/FoodAllergyVS: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
+ERROR: /github/workspace/fsh-generated/resources/ValueSet-FoodAllergyVS: URL Mismatch http://xxsomewhere.org/fhir/myig/ValueSet/FoodAllergyVS vs http://example.com/fhir/example/ValueSet/FoodAllergyVS
 == input/myig.xml ==
-ERROR: ImplementationGuide/xxexample.fhir.uv.myig: ImplementationGuide.definition: ImplementationGuide.definition.resource: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/ImplementationGuide)

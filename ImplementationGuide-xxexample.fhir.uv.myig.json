@@ -11,7 +11,7 @@
   "title": "xxYour User Friendly Name for MyIG Here",
   "status": "draft",
   "experimental": false,
-  "date": "2022-10-23T17:08:45+00:00",
+  "date": "2022-10-23T19:55:23+00:00",
   "publisher": "xxxYour Work Group",
   "contact": [
     {
@@ -334,6 +334,71 @@
           }
         ],
         "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      }
+    ],
+    "resource": [
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Questionnaire"
+          }
+        ],
+        "reference": {
+          "reference": "Questionnaire/food-allergy-questionnaire"
+        },
+        "name": "Food Allergy self-report",
+        "description": "A form for self-reported food allergies, including the basic information and contained valuesets"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/FoodAllergyVS"
+        },
+        "name": "Food Allergies",
+        "description": "Main Food allergies."
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:logical"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/FoodAllergyModel"
+        },
+        "name": "Food Allergy Logical Model",
+        "description": "Food Allergy information model"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/FoodAllergy"
+        },
+        "name": "Food Allergy",
+        "description": "Food Allergy profile"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "AllergyIntolerance"
+          }
+        ],
+        "reference": {
+          "reference": "AllergyIntolerance/MyPeanutAllergy"
+        }
       }
     ],
     "page": {
