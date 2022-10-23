@@ -25,12 +25,12 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category">
     <valueCode value="patient"/>
   </extension>
-  <url value="http://example.com/fhir/example/StructureDefinition/FoodAllergy"/>
+  <url value="http://example.com/fhir/testable/StructureDefinition/FoodAllergy"/>
   <version value="0.1.0-test"/>
   <name value="FoodAllergy"/>
   <title value="Food Allergy"/>
   <status value="active"/>
-  <date value="2022-10-23T19:55:41+00:00"/>
+  <date value="2022-10-23T19:56:59+00:00"/>
   <publisher value="xxxYour Work Group"/>
   <contact>
     <telecom>
@@ -717,7 +717,7 @@
       <isSummary value="true"/>
       <binding>
         <strength value="extensible"/>
-        <valueSet value="http://example.com/fhir/example/ValueSet/FoodAllergyVS"/>
+        <valueSet value="http://example.com/fhir/testable/ValueSet/FoodAllergyVS"/>
       </binding>
       <mapping>
         <identity value="w5"/>
@@ -1494,7 +1494,7 @@
       <mustSupport value="true"/>
       <binding>
         <strength value="extensible"/>
-        <valueSet value="http://example.com/fhir/example/ValueSet/FoodAllergyVS"/>
+        <valueSet value="http://example.com/fhir/testable/ValueSet/FoodAllergyVS"/>
       </binding>
     </element>
     <element id="AllergyIntolerance.patient">
