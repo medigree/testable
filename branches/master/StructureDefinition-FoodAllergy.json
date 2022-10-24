@@ -16,18 +16,33 @@
     }
   ],
   "url": "http://example.com/fhir/testable/StructureDefinition/FoodAllergy",
-  "version": "0.1.0-test",
+  "version": "1.0.0",
   "name": "FoodAllergy",
   "title": "Food Allergy",
   "status": "active",
-  "date": "2022-10-23T19:56:59+00:00",
-  "publisher": "xxxYour Work Group",
+  "date": "2022-10-24T05:48:34+00:00",
+  "publisher": "My Organization",
   "contact": [
     {
+      "name": "My Organization",
       "telecom": [
         {
           "system": "url",
-          "value": "http://xxhl7.org/Special/committees/[something]"
+          "value": "http://example.com/committees"
+        },
+        {
+          "system": "email",
+          "value": "my-group@example.com"
+        }
+      ]
+    },
+    {
+      "name": "Bob Smith",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "bobsmith@example.com",
+          "use": "work"
         }
       ]
     }
@@ -38,7 +53,8 @@
       "coding": [
         {
           "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
-          "code": "001"
+          "code": "001",
+          "display": "World"
         }
       ]
     }

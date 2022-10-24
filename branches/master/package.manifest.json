@@ -1,8 +1,8 @@
 {
-  "version": "0.1.0-test",
+  "version": "1.0.0",
   "fhirVersion": [
     "4.0.1"
   ],
-  "date": "20221023195616",
-  "name": "xxexample.fhir.uv.myig"
+  "date": "20221024054800",
+  "name": "testable-ig"
 }
