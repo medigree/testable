@@ -1,37 +1,37 @@
 [
   {
+    "id": "testable-ig",
+    "type": "ImplementationGuide",
+    "url": "http://example.com/fhir/testable",
+    "version": "1.0.0",
+    "name": "TestableIG"
+  },
+  {
     "id": "FoodAllergy",
     "type": "StructureDefinition",
     "url": "http://example.com/fhir/testable/StructureDefinition/FoodAllergy",
-    "version": "0.1.0-test",
+    "version": "1.0.0",
     "name": "FoodAllergy"
   },
   {
     "id": "FoodAllergyModel",
     "type": "StructureDefinition",
     "url": "http://example.com/fhir/testable/StructureDefinition/FoodAllergyModel",
-    "version": "0.1.0-test",
+    "version": "1.0.0",
     "name": "FoodAllergyModel"
   },
   {
     "id": "FoodAllergyVS",
     "type": "ValueSet",
     "url": "http://example.com/fhir/testable/ValueSet/FoodAllergyVS",
-    "version": "0.1.0-test",
+    "version": "1.0.0",
     "name": "FoodAllergyVS"
   },
   {
     "id": "food-allergy-questionnaire",
     "type": "Questionnaire",
     "url": "http://openhie.org/fhir/food-allergy/Questionnaire/food-allergy-questionnaire",
-    "version": "0.1.0-test",
+    "version": "1.0.0",
     "name": "FoodAllergyQuestionnaire"
-  },
-  {
-    "id": "xxexample.fhir.uv.myig",
-    "type": "ImplementationGuide",
-    "url": "http://xxsomewhere.org/fhir/myig/ImplementationGuide/xxexample.fhir.uv.myig",
-    "version": "0.1.0-test",
-    "name": "XXYourComputableMyIGNameHere"
   }
 ]
