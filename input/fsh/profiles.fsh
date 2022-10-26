@@ -9,8 +9,8 @@ Description: "Food Allergy profile"
 * code 1..1 MS 
 * code from FoodAllergyVS (extensible)
 * recordedDate MS
-* recorder MS
-* asserter MS
+//* recorder MS
+//* asserter MS
 * reaction MS
   * manifestation MS
   * exposureRoute MS

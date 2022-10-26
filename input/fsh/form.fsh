@@ -104,11 +104,11 @@ Usage: #definition
 
 
 * insert Question(,patient,Patient ID,string,false)
-* insert Question(,allergen,Substance that the person is allergic to,choice,false)
+* insert Question(,allergen,Substance that the person is allergic to,coding,false)
 * item[=].answerValueSet = Canonical(vs-food-allergy-cont)
-* insert Question(,clinicalStatus,Status of the allergy - active or resolved,choice,false)
+* insert Question(,clinicalStatus,Status of the allergy - active or resolved,coding,false)
 * item[=].answerValueSet = Canonical(vs-food-allergy-clinstatus-cont)
-* insert Question(,verificationStatus,Verification status of the allergy - confirmed or suspected or refuted,choice,false)
+* insert Question(,verificationStatus,Verification status of the allergy - confirmed or suspected or refuted,coding,false)
 * item[=].answerValueSet = Canonical(vs-food-allergy-verifstatus-cont)
 * insert Question(,recordedDate,When was it reported,date,false)
 * insert Question(,recorder,Who recorded the allergy,string,false)
