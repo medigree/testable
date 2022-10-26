@@ -1,6 +1,6 @@
 {
   "resourceType": "ImplementationGuide",
-  "id": "testable-ig",
+  "id": "testable",
   "text": {
     "status": "extensions",
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>TestableIG</h2><p>The official URL for this implementation guide is: </p><pre>http://example.com/fhir/testable</pre><div><p>Testable IG.</p>\n</div></div>"
@@ -49,7 +49,7 @@
       ]
     }
   ],
-  "packageId": "testable-ig",
+  "packageId": "testable",
   "license": "CC0-1.0",
   "fhirVersion": [
     "5.0.0-ballot"

@@ -5,9 +5,9 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://example.com/fhir/testable/ImplementationGuide/testable-ig> a fhir:ImplementationGuide;
+<http://example.com/fhir/testable/ImplementationGuide/testable> a fhir:ImplementationGuide;
   fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "testable-ig"];
+  fhir:Resource.id [ fhir:value "testable"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "extensions" ];
      fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>TestableIG</h2><p>The official URL for this implementation guide is: </p><pre>http://example.com/fhir/testable</pre><div><p>Testable IG.</p>\n</div></div>"
@@ -51,7 +51,7 @@
        fhir:Coding.display [ fhir:value "World" ]
      ]
   ];
-  fhir:ImplementationGuide.packageId [ fhir:value "testable-ig"];
+  fhir:ImplementationGuide.packageId [ fhir:value "testable"];
   fhir:ImplementationGuide.license [ fhir:value "CC0-1.0"];
   fhir:ImplementationGuide.fhirVersion [
      fhir:value "5.0.0-ballot";
@@ -752,7 +752,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<http://example.com/fhir/testable/ImplementationGuide/testable-ig.ttl> a owl:Ontology;
+<http://example.com/fhir/testable/ImplementationGuide/testable.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

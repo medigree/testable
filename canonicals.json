@@ -1,6 +1,6 @@
 [
   {
-    "id": "testable-ig",
+    "id": "testable",
     "type": "ImplementationGuide",
     "url": "http://example.com/fhir/testable",
     "version": "1.0.0",

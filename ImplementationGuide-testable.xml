@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <ImplementationGuide xmlns="http://hl7.org/fhir">
-  <id value="testable-ig"/>
+  <id value="testable"/>
   <text>
     <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>TestableIG</h2><p>The official URL for this implementation guide is: </p><pre>http://example.com/fhir/testable</pre><div><p>Testable IG.</p>
 </div></div>
@@ -40,7 +40,7 @@
       <display value="World"/>
     </coding>
   </jurisdiction>
-  <packageId value="testable-ig"/>
+  <packageId value="testable"/>
   <license value="CC0-1.0"/>
   <fhirVersion value="5.0.0-ballot"/>
   <dependsOn id="hl7tx">
