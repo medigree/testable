@@ -3,10 +3,10 @@
   "name": "TestableIG",
   "package-id": "testable-ig",
   "ig-ver": "1.0.0",
-  "date": "Mon, 24 Oct, 2022 05:48:34 +0000",
+  "date": "Wed, 26 Oct, 2022 17:55:46 +0000",
   "errs": 5,
-  "warnings": 7,
+  "warnings": 23,
   "hints": 0,
-  "version": "4.0.1",
+  "version": "5.0.0-ballot",
   "tool": "5.0.0-ballot (3)"
 }

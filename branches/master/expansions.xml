@@ -1,233 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="11b7fd3e-c739-4d6e-b126-b5421fe13ca7"/>
+  <id value="879207f2-2791-40df-aae8-d1a186839ac1"/>
   <meta>
-    <lastUpdated value="2022-10-24T05:48:34.173+00:00"/>
+    <lastUpdated value="2022-10-26T17:55:46.756+00:00"/>
   </meta>
   <type value="collection"/>
-  <entry>
-    <fullUrl value="http://example.com/fhir/testable/ValueSet/FoodAllergyVS"/>
-    <resource>
-      <ValueSet>
-        <id value="FoodAllergyVS"/>
-        <text>
-          <status value="generated"/>
-          <div xmlns="http://www.w3.org/1999/xhtml">
-            <p>This value set contains 11 concepts</p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT International edition 31-Jul 2022</p>
-            <table class="codes">
-              <tr>
-                <td style="white-space:nowrap">
-                  <b>Code</b>
-                </td>
-                <td>
-                  <b>System</b>
-                </td>
-                <td>
-                  <b>Display</b>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-91935009"> </a>  
-                  <a href="http://snomed.info/id/91935009">91935009</a>
-                </td>
-                <td>http://snomed.info/sct</td>
-                <td>Allergy to peanut</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-48821000119104"> </a>  
-                  <a href="http://snomed.info/id/48821000119104">48821000119104</a>
-                </td>
-                <td>http://snomed.info/sct</td>
-                <td>Allergy to tree nut</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-782555009"> </a>  
-                  <a href="http://snomed.info/id/782555009">782555009</a>
-                </td>
-                <td>http://snomed.info/sct</td>
-                <td>Allergy to cow's milk protein</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-213020009"> </a>  
-                  <a href="http://snomed.info/id/213020009">213020009</a>
-                </td>
-                <td>http://snomed.info/sct</td>
-                <td>Allergy to egg protein</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-417532002"> </a>  
-                  <a href="http://snomed.info/id/417532002">417532002</a>
-                </td>
-                <td>http://snomed.info/sct</td>
-                <td>Allergy to fish</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-300913006"> </a>  
-                  <a href="http://snomed.info/id/300913006">300913006</a>
-                </td>
-                <td>http://snomed.info/sct</td>
-                <td>Allergy to shellfish</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-782594005"> </a>  
-                  <a href="http://snomed.info/id/782594005">782594005</a>
-                </td>
-                <td>http://snomed.info/sct</td>
-                <td>Allergy to soy protein</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-260167008"> </a>  
-                  <a href="http://snomed.info/id/260167008">260167008</a>
-                </td>
-                <td>http://snomed.info/sct</td>
-                <td>Sesame seed</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-21191000122102"> </a>  
-                  <a href="http://snomed.info/id/21191000122102">21191000122102</a>
-                </td>
-                <td>http://snomed.info/sct</td>
-                <td>Allergy to mustard</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-712843002"> </a>  
-                  <a href="http://snomed.info/id/712843002">712843002</a>
-                </td>
-                <td>http://snomed.info/sct</td>
-                <td>Allergy to celery</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-782575000"> </a>  
-                  <a href="http://snomed.info/id/782575000">782575000</a>
-                </td>
-                <td>http://snomed.info/sct</td>
-                <td>Allergy to lupine seed</td>
-              </tr>
-            </table>
-          </div>
-        </text>
-        <url value="http://example.com/fhir/testable/ValueSet/FoodAllergyVS"/>
-        <version value="1.0.0"/>
-        <name value="FoodAllergyVS"/>
-        <title value="Food Allergies"/>
-        <status value="active"/>
-        <date value="2022-10-24T05:48:34+00:00"/>
-        <publisher value="My Organization"/>
-        <contact>
-          <name value="My Organization"/>
-          <telecom>
-            <system value="url"/>
-            <value value="http://example.com/committees"/>
-          </telecom>
-          <telecom>
-            <system value="email"/>
-            <value value="my-group@example.com"/>
-          </telecom>
-        </contact>
-        <contact>
-          <name value="Bob Smith"/>
-          <telecom>
-            <system value="email"/>
-            <value value="bobsmith@example.com"/>
-            <use value="work"/>
-          </telecom>
-        </contact>
-        <description value="Main Food allergies."/>
-        <jurisdiction>
-          <coding>
-            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
-            <code value="001"/>
-            <display value="World"/>
-          </coding>
-        </jurisdiction>
-        <expansion>
-          <identifier value="urn:uuid:19f12bc9-903c-45c5-9e09-01b7861b472a"/>
-          <timestamp value="2022-10-24T05:48:46+00:00"/>
-          <total value="11"/>
-          <parameter>
-            <name value="excludeNested"/>
-            <valueBoolean value="false"/>
-          </parameter>
-          <parameter>
-            <name value="limitedExpansion"/>
-            <valueBoolean value="true"/>
-          </parameter>
-          <parameter>
-            <name value="version"/>
-            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20220731"/>
-          </parameter>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="91935009"/>
-            <display value="Allergy to peanut"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="48821000119104"/>
-            <display value="Allergy to tree nut"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="782555009"/>
-            <display value="Allergy to cow's milk protein"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="213020009"/>
-            <display value="Allergy to egg protein"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="417532002"/>
-            <display value="Allergy to fish"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="300913006"/>
-            <display value="Allergy to shellfish"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="782594005"/>
-            <display value="Allergy to soy protein"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="260167008"/>
-            <display value="Sesame seed"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="21191000122102"/>
-            <display value="Allergy to mustard"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="712843002"/>
-            <display value="Allergy to celery"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="782575000"/>
-            <display value="Allergy to lupine seed"/>
-          </contains>
-        </expansion>
-      </ValueSet>
-    </resource>
-  </entry>
   <entry>
     <fullUrl value="http://openhie.org/fhir/food-allergy/Questionnaire/food-allergy-questionnaire#vs-food-allergy-cont"/>
     <resource>
@@ -520,6 +298,228 @@
             <system value="http://snomed.info/sct"/>
             <code value="55561003"/>
             <display value="Active"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://example.com/fhir/testable/ValueSet/FoodAllergyVS"/>
+    <resource>
+      <ValueSet>
+        <id value="FoodAllergyVS"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 11 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT International edition 31-Jul 2022</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-91935009"> </a>  
+                  <a href="http://snomed.info/id/91935009">91935009</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Allergy to peanut</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-48821000119104"> </a>  
+                  <a href="http://snomed.info/id/48821000119104">48821000119104</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Allergy to tree nut</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-782555009"> </a>  
+                  <a href="http://snomed.info/id/782555009">782555009</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Allergy to cow's milk protein</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-213020009"> </a>  
+                  <a href="http://snomed.info/id/213020009">213020009</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Allergy to egg protein</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-417532002"> </a>  
+                  <a href="http://snomed.info/id/417532002">417532002</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Allergy to fish</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-300913006"> </a>  
+                  <a href="http://snomed.info/id/300913006">300913006</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Allergy to shellfish</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-782594005"> </a>  
+                  <a href="http://snomed.info/id/782594005">782594005</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Allergy to soy protein</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-260167008"> </a>  
+                  <a href="http://snomed.info/id/260167008">260167008</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Sesame seed</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-21191000122102"> </a>  
+                  <a href="http://snomed.info/id/21191000122102">21191000122102</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Allergy to mustard</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-712843002"> </a>  
+                  <a href="http://snomed.info/id/712843002">712843002</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Allergy to celery</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-782575000"> </a>  
+                  <a href="http://snomed.info/id/782575000">782575000</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Allergy to lupine seed</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://example.com/fhir/testable/ValueSet/FoodAllergyVS"/>
+        <version value="1.0.0"/>
+        <name value="FoodAllergyVS"/>
+        <title value="Food Allergies"/>
+        <status value="active"/>
+        <date value="2022-10-26T17:55:46+00:00"/>
+        <publisher value="My Organization"/>
+        <contact>
+          <name value="My Organization"/>
+          <telecom>
+            <system value="url"/>
+            <value value="http://example.com/committees"/>
+          </telecom>
+          <telecom>
+            <system value="email"/>
+            <value value="my-group@example.com"/>
+          </telecom>
+        </contact>
+        <contact>
+          <name value="Bob Smith"/>
+          <telecom>
+            <system value="email"/>
+            <value value="bobsmith@example.com"/>
+            <use value="work"/>
+          </telecom>
+        </contact>
+        <description value="Main Food allergies."/>
+        <jurisdiction>
+          <coding>
+            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+            <code value="001"/>
+            <display value="World"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:c483cd18-fe24-44be-8679-502b4cc1449b"/>
+          <timestamp value="2022-10-26T17:56:03+00:00"/>
+          <total value="11"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="limitedExpansion"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20220731"/>
+          </parameter>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="91935009"/>
+            <display value="Allergy to peanut"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="48821000119104"/>
+            <display value="Allergy to tree nut"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="782555009"/>
+            <display value="Allergy to cow's milk protein"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="213020009"/>
+            <display value="Allergy to egg protein"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="417532002"/>
+            <display value="Allergy to fish"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="300913006"/>
+            <display value="Allergy to shellfish"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="782594005"/>
+            <display value="Allergy to soy protein"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="260167008"/>
+            <display value="Sesame seed"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="21191000122102"/>
+            <display value="Allergy to mustard"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="712843002"/>
+            <display value="Allergy to celery"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="782575000"/>
+            <display value="Allergy to lupine seed"/>
           </contains>
         </expansion>
       </ValueSet>

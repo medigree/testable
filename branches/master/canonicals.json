@@ -28,6 +28,13 @@
     "name": "FoodAllergyVS"
   },
   {
+    "id": "read-validate-patient-json",
+    "type": "TestScript",
+    "url": "http://hl7.org/fhir/us/carin-bb/TestScript/read-validate-patient-json",
+    "version": "1.0.0",
+    "name": "read-validate-patient-json"
+  },
+  {
     "id": "food-allergy-questionnaire",
     "type": "Questionnaire",
     "url": "http://openhie.org/fhir/food-allergy/Questionnaire/food-allergy-questionnaire",

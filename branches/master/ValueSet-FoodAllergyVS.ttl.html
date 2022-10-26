@@ -5,7 +5,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>TESTABLE-IG\Food Allergies - TTL Representation - FHIR v4.0.1</title>
+    <title>TESTABLE-IG\Food Allergies - TTL Representation - FHIR v5.0.0-ballot</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -21,18 +21,8 @@
     <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
   	<link href="assets/css/prism.css" rel="stylesheet" />
     <!-- Placeholder for child template CSS declarations -->
-<link href="assets/css/openhie.css" rel="stylesheet"/>
-<!-- Placeholder for child template CSS declarations -->
-<link href="assets/css/colors.css" rel="stylesheet"/>
 
     <script type="text/javascript" src="fhir-table-scripts.js"> </script>
-<!--
-  Questionnaire:
--->
-    <link href="assets/css/lforms.min.css" rel="stylesheet"/>
-
-
-
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -57,29 +47,19 @@
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
 
-<!-- Left logo - typically the publisher's logo - project or affiliate -->
-        <div id="project-nav">
-          <a id="project-logo" no-external="true" href="http://hl7.eu">
-            <img height="71" alt="Project home" src="assets/images/home.png"/>
-          </a>
-        </div>
-
-<!-- Right logo - for example the FHIR logo -->
-<!-- Make sure you have authorization to use the FHIR logo -->
-        <div id="family-nav">
-          <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="70" alt="FHIR website" src="assets/images/fire.png"/> </a>
-        </div>
-
-<!-- search icon - if you want -->
-<!--
-        <div id="hl7-search">
-          <a id="hl7-search-lnk" no-external="true" href="http://hl7.org/fhir/search.cfm"><img alt="Search FHIR" src="assets/images/search.png"/></a>
-        </div>
--->
-
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold">HL7 FHIR Testable Implementation Guide</span><br/>1.0.0 - STU1</p>
+          <p><span style="font-size:12pt;font-weight:bold">HL7 FHIR Testable Implementation Guide</span>
+            <br/>
+            <span style="display:inline-block;">1.0.0 - STU1
+
+
+
+  <img alt="International flag" src="assets/images/001.svg" height="16" title="International"/>
+
+
+            </span>
+          </p>
         </div>
       </div> <!-- /container -->
     </div>  <!-- /segment-header -->
@@ -97,7 +77,7 @@
               <span class="icon-bar"> </span>
               <span class="icon-bar"> </span>
             </button>
-            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <a class="navbar-brand hidden" href="http://build.fhir.org/index.html">FHIR</a>
             <div class="nav-collapse collapse navbar-inverse-collapse">
               <ul
 	xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
@@ -136,12 +116,12 @@
       </div>  <!-- /container -->
     </div>  <!-- /segment-navbar -->
     <!--status-bar-->
-    
+
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
           <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Food Allergies</b></li>
-          
+
         </ul>
       </div>  <!-- /container -->
     </div>  <!-- /segment-breadcrumb -->
@@ -154,6 +134,8 @@
 
 <div style="counter-reset: section 9" class="col-12">
 <!--ReleaseHeader--><p id="publish-box">HL7 FHIR Testable Implementation Guide - Local Development build (v1.0.0). See the <a href="http://example.com/fhir/testable/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+
+
 
 
 
@@ -197,6 +179,21 @@
 
 
 <h2 id="root">: Food Allergies - TTL Representation</h2>
+  <table class="colsi">
+    <tr>
+
+      <td colspan="2">
+        
+          Active
+          
+            as of 2022-10-26
+          
+        
+      </td>
+
+    </tr>
+  </table>
+
 
 <p><a href="ValueSet-FoodAllergyVS.ttl" no-download="true">Raw ttl</a> | <a href="ValueSet-FoodAllergyVS.ttl" download>Download</a></p>
 
@@ -214,85 +211,85 @@
 # - resource -------------------------------------------------------------------
 
  a fhir:ValueSet;
-  <a href="http://hl7.org/fhir/R4/rdf.html#tree-root">fhir:nodeRole</a> fhir:treeRoot;
-  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.id">fhir:Resource.id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;FoodAllergyVS&quot;];
-  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.text">fhir:DomainResource.text</a> [
-     <a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:Narrative.status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;generated&quot; ];
+  <a href="http://build.fhir.org/rdf.html#tree-root">fhir:nodeRole</a> fhir:treeRoot;
+  <a href="http://build.fhir.org/valueset.html#ValueSet.id">fhir:Resource.id</a> [ <a href="http://build.fhir.org/datatypes.html#id">fhir:value</a> &quot;FoodAllergyVS&quot;];
+  <a href="http://build.fhir.org/valueset.html#ValueSet.text">fhir:DomainResource.text</a> [
+     <a href="http://build.fhir.org/narrative.html#Narrative#Narrative.status">fhir:Narrative.status</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;generated&quot; ];
      fhir:Narrative.div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;ul&gt;&lt;li&gt;Include these codes as defined in &lt;a href=\&quot;http://www.snomed.org/\&quot;&gt;&lt;code&gt;http://snomed.info/sct&lt;/code&gt;&lt;/a&gt;&lt;table class=\&quot;none\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/91935009\&quot;&gt;91935009&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Allergy to peanut&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/48821000119104\&quot;&gt;48821000119104&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Allergy to tree nut&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/782555009\&quot;&gt;782555009&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Allergy to cow's milk protein&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/213020009\&quot;&gt;213020009&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Allergy to egg protein&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/417532002\&quot;&gt;417532002&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Allergy to fish&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/300913006\&quot;&gt;300913006&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Allergy to shellfish&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/782594005\&quot;&gt;782594005&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Allergy to soy protein&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/260167008\&quot;&gt;260167008&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Sesame seed&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/21191000122102\&quot;&gt;21191000122102&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Allergy to mustard&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/712843002\&quot;&gt;712843002&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Allergy to celery&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/782575000\&quot;&gt;782575000&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Allergy to lupine seed&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&quot;
   ];
-  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.url">fhir:ValueSet.url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://example.com/fhir/testable/ValueSet/FoodAllergyVS&quot;];
-  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.version">fhir:ValueSet.version</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;1.0.0&quot;];
-  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.name">fhir:ValueSet.name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;FoodAllergyVS&quot;];
-  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.title">fhir:ValueSet.title</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Food Allergies&quot;];
-  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.status">fhir:ValueSet.status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;active&quot;];
-  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.date">fhir:ValueSet.date</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:value</a> &quot;2022-10-24T05:48:34+00:00&quot;^^xsd:dateTime];
-  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.publisher">fhir:ValueSet.publisher</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;My Organization&quot;];
-  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.contact">fhir:ValueSet.contact</a> [
-     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
-     <a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">fhir:ContactDetail.name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;My Organization&quot; ];
-     <a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">fhir:ContactDetail.telecom</a> [
-       <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
-       <a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">fhir:ContactPoint.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;url&quot; ];
-       <a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">fhir:ContactPoint.value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;http://example.com/committees&quot; ]     ], [
-       <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 1;
-       <a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">fhir:ContactPoint.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;email&quot; ];
-       <a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">fhir:ContactPoint.value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;my-group@example.com&quot; ]     ]
+  <a href="http://build.fhir.org/valueset.html#ValueSet.url">fhir:ValueSet.url</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;http://example.com/fhir/testable/ValueSet/FoodAllergyVS&quot;];
+  <a href="http://build.fhir.org/valueset.html#ValueSet.version">fhir:ValueSet.version</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;1.0.0&quot;];
+  <a href="http://build.fhir.org/valueset.html#ValueSet.name">fhir:ValueSet.name</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;FoodAllergyVS&quot;];
+  <a href="http://build.fhir.org/valueset.html#ValueSet.title">fhir:ValueSet.title</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Food Allergies&quot;];
+  <a href="http://build.fhir.org/valueset.html#ValueSet.status">fhir:ValueSet.status</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;active&quot;];
+  <a href="http://build.fhir.org/valueset.html#ValueSet.date">fhir:ValueSet.date</a> [ <a href="http://build.fhir.org/datatypes.html#dateTime">fhir:value</a> &quot;2022-10-26T17:55:46+00:00&quot;^^xsd:dateTime];
+  <a href="http://build.fhir.org/valueset.html#ValueSet.publisher">fhir:ValueSet.publisher</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;My Organization&quot;];
+  <a href="http://build.fhir.org/valueset.html#ValueSet.contact">fhir:ValueSet.contact</a> [
+     <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+     <a href="http://build.fhir.org/metadatatypes.html#ContactDetail#ContactDetail.name">fhir:ContactDetail.name</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;My Organization&quot; ];
+     <a href="http://build.fhir.org/metadatatypes.html#ContactDetail#ContactDetail.telecom">fhir:ContactDetail.telecom</a> [
+       <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+       <a href="http://build.fhir.org/datatypes.html#ContactPoint#ContactPoint.system">fhir:ContactPoint.system</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;url&quot; ];
+       <a href="http://build.fhir.org/datatypes.html#ContactPoint#ContactPoint.value">fhir:ContactPoint.value</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;http://example.com/committees&quot; ]     ], [
+       <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 1;
+       <a href="http://build.fhir.org/datatypes.html#ContactPoint#ContactPoint.system">fhir:ContactPoint.system</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;email&quot; ];
+       <a href="http://build.fhir.org/datatypes.html#ContactPoint#ContactPoint.value">fhir:ContactPoint.value</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;my-group@example.com&quot; ]     ]
   ], [
-     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 1;
-     <a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">fhir:ContactDetail.name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Bob Smith&quot; ];
-     <a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">fhir:ContactDetail.telecom</a> [
-       <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
-       <a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">fhir:ContactPoint.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;email&quot; ];
-       <a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">fhir:ContactPoint.value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;bobsmith@example.com&quot; ];
-       <a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.use">fhir:ContactPoint.use</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;work&quot; ]     ]
+     <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 1;
+     <a href="http://build.fhir.org/metadatatypes.html#ContactDetail#ContactDetail.name">fhir:ContactDetail.name</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Bob Smith&quot; ];
+     <a href="http://build.fhir.org/metadatatypes.html#ContactDetail#ContactDetail.telecom">fhir:ContactDetail.telecom</a> [
+       <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+       <a href="http://build.fhir.org/datatypes.html#ContactPoint#ContactPoint.system">fhir:ContactPoint.system</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;email&quot; ];
+       <a href="http://build.fhir.org/datatypes.html#ContactPoint#ContactPoint.value">fhir:ContactPoint.value</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;bobsmith@example.com&quot; ];
+       <a href="http://build.fhir.org/datatypes.html#ContactPoint#ContactPoint.use">fhir:ContactPoint.use</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;work&quot; ]     ]
   ];
-  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.description">fhir:ValueSet.description</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">fhir:value</a> &quot;Main Food allergies.&quot;];
-  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.jurisdiction">fhir:ValueSet.jurisdiction</a> [
-     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
-     <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
-       <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
-       <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://unstats.un.org/unsd/methods/m49/m49.htm&quot; ];
-       <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;001&quot; ];
-       <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:Coding.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;World&quot; ]     ]
+  <a href="http://build.fhir.org/valueset.html#ValueSet.description">fhir:ValueSet.description</a> [ <a href="http://build.fhir.org/datatypes.html#markdown">fhir:value</a> &quot;Main Food allergies.&quot;];
+  <a href="http://build.fhir.org/valueset.html#ValueSet.jurisdiction">fhir:ValueSet.jurisdiction</a> [
+     <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+     <a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+       <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+       <a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;http://unstats.un.org/unsd/methods/m49/m49.htm&quot; ];
+       <a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;001&quot; ];
+       <a href="http://build.fhir.org/datatypes.html#Coding#Coding.display">fhir:Coding.display</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;World&quot; ]     ]
   ];
-  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose">fhir:ValueSet.compose</a> [
-     <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include">fhir:ValueSet.compose.include</a> [
-       <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
-       <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.system">fhir:ValueSet.compose.include.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://snomed.info/sct&quot; ];
-       <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">fhir:ValueSet.compose.include.concept</a> [
-         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
-         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;91935009&quot; ];
-         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Allergy to peanut&quot; ]       ], [
-         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 1;
-         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;48821000119104&quot; ];
-         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Allergy to tree nut&quot; ]       ], [
-         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 2;
-         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;782555009&quot; ];
-         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Allergy to cow's milk protein&quot; ]       ], [
-         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 3;
-         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;213020009&quot; ];
-         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Allergy to egg protein&quot; ]       ], [
-         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 4;
-         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;417532002&quot; ];
-         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Allergy to fish&quot; ]       ], [
-         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 5;
-         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;300913006&quot; ];
-         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Allergy to shellfish&quot; ]       ], [
-         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 6;
-         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;782594005&quot; ];
-         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Allergy to soy protein&quot; ]       ], [
-         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 7;
-         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;260167008&quot; ];
-         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Sesame seed&quot; ]       ], [
-         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 8;
-         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;21191000122102&quot; ];
-         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Allergy to mustard&quot; ]       ], [
-         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 9;
-         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;712843002&quot; ];
-         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Allergy to celery&quot; ]       ], [
-         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 10;
-         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;782575000&quot; ];
-         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Allergy to lupine seed&quot; ]       ]     ]
+  <a href="http://build.fhir.org/valueset.html#ValueSet.compose">fhir:ValueSet.compose</a> [
+     <a href="http://build.fhir.org/valueset.html#ValueSet.compose.include">fhir:ValueSet.compose.include</a> [
+       <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+       <a href="http://build.fhir.org/valueset.html#ValueSet.compose.include.system">fhir:ValueSet.compose.include.system</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;http://snomed.info/sct&quot; ];
+       <a href="http://build.fhir.org/valueset.html#ValueSet.compose.include.concept">fhir:ValueSet.compose.include.concept</a> [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+         <a href="http://build.fhir.org/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;91935009&quot; ];
+         <a href="http://build.fhir.org/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Allergy to peanut&quot; ]       ], [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 1;
+         <a href="http://build.fhir.org/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;48821000119104&quot; ];
+         <a href="http://build.fhir.org/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Allergy to tree nut&quot; ]       ], [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 2;
+         <a href="http://build.fhir.org/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;782555009&quot; ];
+         <a href="http://build.fhir.org/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Allergy to cow's milk protein&quot; ]       ], [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 3;
+         <a href="http://build.fhir.org/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;213020009&quot; ];
+         <a href="http://build.fhir.org/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Allergy to egg protein&quot; ]       ], [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 4;
+         <a href="http://build.fhir.org/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;417532002&quot; ];
+         <a href="http://build.fhir.org/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Allergy to fish&quot; ]       ], [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 5;
+         <a href="http://build.fhir.org/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;300913006&quot; ];
+         <a href="http://build.fhir.org/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Allergy to shellfish&quot; ]       ], [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 6;
+         <a href="http://build.fhir.org/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;782594005&quot; ];
+         <a href="http://build.fhir.org/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Allergy to soy protein&quot; ]       ], [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 7;
+         <a href="http://build.fhir.org/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;260167008&quot; ];
+         <a href="http://build.fhir.org/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Sesame seed&quot; ]       ], [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 8;
+         <a href="http://build.fhir.org/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;21191000122102&quot; ];
+         <a href="http://build.fhir.org/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Allergy to mustard&quot; ]       ], [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 9;
+         <a href="http://build.fhir.org/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;712843002&quot; ];
+         <a href="http://build.fhir.org/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Allergy to celery&quot; ]       ], [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 10;
+         <a href="http://build.fhir.org/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;782575000&quot; ];
+         <a href="http://build.fhir.org/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Allergy to lupine seed&quot; ]       ]     ]
   ].
 
 # - ontology header ------------------------------------------------------------
@@ -329,20 +326,15 @@
   <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
     <div class="container">  <!-- container -->
 
-           
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2021+ <a style="color: #81BEF7" href="http://example.com/committees">My Organization</a>.  Package testable-ig#1.0.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Oct 24, 2022 05:48+0000">2022-10-24</span>
+          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="http://example.com/committees">My Organization</a>.  Package testable-ig#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://build.fhir.org/">FHIR 5.0.0-ballot</a>. Generated <span title="Wed, Oct 26, 2022 17:55+0000">2022-10-26</span>
           <br/>
-          <span style="color: #FFFF77">
-                      Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
-                 <a style="color: #81BEF7" href="qa.html">QA Report</a> |
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
                  
-                 <a style="color: #81BEF7" target="_blank" href="http://example.com/fhir/testable/history.html">Version History</a> |
-                 <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/R4/license.html"><img style="border-style: none;" alt="CC-BY" src="assets/images/cc-by.png" height="17"/></a> |
-                 <!--<a style="color: #81BEF7" href="todo.html">Search</a> | --> 
-
-
+                
           </span>
         </p>
       </div>  <!-- /inner-wrapper -->
@@ -366,7 +358,7 @@
   <script>anchors.options.visible = 'hover'
 anchors.add()</script>
   
-  <!-- feedback form - Google forms -->
+<!-- feedback form - Google forms -->
 <!-- v0.1, 2021-01-09 -->
 
 
