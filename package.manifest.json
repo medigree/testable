@@ -1,8 +1,8 @@
 {
   "version": "1.0.0",
   "fhirVersion": [
-    "4.0.1"
+    "5.0.0-ballot"
   ],
-  "date": "20221024054800",
+  "date": "20221026175509",
   "name": "testable-ig"
 }

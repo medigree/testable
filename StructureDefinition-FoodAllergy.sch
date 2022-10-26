@@ -122,14 +122,34 @@
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
-    <sch:title>AllergyIntolerance.recorder</sch:title>
-    <sch:rule context="f:AllergyIntolerance/f:recorder">
+    <sch:title>AllergyIntolerance.participant</sch:title>
+    <sch:rule context="f:AllergyIntolerance/f:participant">
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
-    <sch:title>AllergyIntolerance.asserter</sch:title>
-    <sch:rule context="f:AllergyIntolerance/f:asserter">
+    <sch:title>AllergyIntolerance.participant.extension</sch:title>
+    <sch:rule context="f:AllergyIntolerance/f:participant/f:extension">
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
+      <sch:assert test="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &quot;value&quot;)])">Must have either extensions or value[x], not both (inherited)</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>AllergyIntolerance.participant.modifierExtension</sch:title>
+    <sch:rule context="f:AllergyIntolerance/f:participant/f:modifierExtension">
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
+      <sch:assert test="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &quot;value&quot;)])">Must have either extensions or value[x], not both (inherited)</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>AllergyIntolerance.participant.function</sch:title>
+    <sch:rule context="f:AllergyIntolerance/f:participant/f:function">
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>AllergyIntolerance.participant.actor</sch:title>
+    <sch:rule context="f:AllergyIntolerance/f:participant/f:actor">
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
     </sch:rule>
   </sch:pattern>

@@ -1,0 +1,154 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://example.com/fhir/testable/TestScript/read-validate-patient-json> a fhir:TestScript;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "read-validate-patient-json"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: TestScript</b><a name=\"read-validate-patient-json\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource TestScript \"read-validate-patient-json\" </p></div><p><b>url</b>: <code>http://hl7.org/fhir/us/carin-bb/TestScript/read-validate-patient-json</code></p><p><b>version</b>: 1.0.0</p><p><b>name</b>: read-validate-patient-json</p><p><b>title</b>: HL7 FHIR R4 TestScript Read Validate</p><p><b>status</b>: active</p><p><b>date</b>: 2022-06-08</p><p><b>publisher</b>: My Organization</p><p><b>contact</b>: My Organization: <a href=\"http://example.com/committees\">http://example.com/committees</a>,<a href=\"mailto:my-group@example.com\">my-group@example.com</a>, Bob Smith: <a href=\"mailto:bobsmith@example.com\">bobsmith@example.com</a></p><p><b>description</b>: Example TestScript to test resource read and profile validation</p><p><b>jurisdiction</b>: World <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (m49.htm#001)</span></p><p><b>copyright</b>: (c) Health Level 7 (HL7) International 2022</p><h3>Origins</h3><table class=\"grid\"><tr><td>-</td><td><b>Index</b></td><td><b>Profile</b></td></tr><tr><td>*</td><td>1</td><td>FHIR Client (Details: http://terminology.hl7.org/CodeSystem/testscript-profile-origin-types code FHIR-Client = 'FHIR Client', stated as 'null')</td></tr></table><h3>Destinations</h3><table class=\"grid\"><tr><td>-</td><td><b>Index</b></td><td><b>Profile</b></td></tr><tr><td>*</td><td>1</td><td>FHIR Server (Details: http://terminology.hl7.org/CodeSystem/testscript-profile-destination-types code FHIR-Server = 'FHIR Server', stated as 'null')</td></tr></table><h3>Scopes</h3><table class=\"grid\"><tr><td>-</td><td><b>Artifact</b></td><td><b>Conformance</b></td></tr><tr><td>*</td><td><a href=\"Questionnaire-food-allergy-questionnaire.html\">Food Allergy self-report</a></td><td>required <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#required)</span></td></tr></table><p><b>profile</b>: <a href=\"http://openhie.org/fhir/food-allergy/Questionnaire/food-allergy-questionnaire\">http://openhie.org/fhir/food-allergy/Questionnaire/food-allergy-questionnaire</a> \"FoodAllergyQuestionnaire\"</p><h3>Variables</h3><table class=\"grid\"><tr><td>-</td><td><b>Name</b></td><td><b>DefaultValue</b></td><td><b>Description</b></td><td><b>Hint</b></td></tr><tr><td>*</td><td>patientResourceId</td><td>example</td><td>Enter a known resource id on the destination system.</td><td>[resource.id]</td></tr></table><blockquote><p><b>test</b></p><p><b>name</b>: PatientReadValidate</p><p><b>description</b>: Test resource read on destination server and assert returned resource passes validation</p><blockquote><p><b>action</b></p><h3>Operations</h3><table class=\"grid\"><tr><td>-</td><td><b>Type</b></td><td><b>Resource</b></td><td><b>Description</b></td><td><b>Accept</b></td><td><b>ContentType</b></td><td><b>Destination</b></td><td><b>EncodeRequestUrl</b></td><td><b>Origin</b></td><td><b>Params</b></td></tr><tr><td>*</td><td>Read (Details: http://terminology.hl7.org/CodeSystem/testscript-operation-codes code read = 'Read', stated as 'null')</td><td><a href=\"http://build.fhir.org/patient.html\">Patient</a></td><td>ResourceRead</td><td>json</td><td>json</td><td>1</td><td>true</td><td>1</td><td>/${patientResourceId}</td></tr></table></blockquote><blockquote><p><b>action</b></p><h3>Asserts</h3><table class=\"grid\"><tr><td>-</td><td><b>Description</b></td><td><b>Direction</b></td><td><b>ResponseCode</b></td><td><b>StopTestOnFail</b></td><td><b>WarningOnly</b></td></tr><tr><td>*</td><td>Confirm that the returned response code is 200 OK.</td><td>response</td><td>200</td><td>false</td><td>false</td></tr></table></blockquote><blockquote><p><b>action</b></p><h3>Asserts</h3><table class=\"grid\"><tr><td>-</td><td><b>Description</b></td><td><b>Direction</b></td><td><b>Resource</b></td><td><b>StopTestOnFail</b></td><td><b>WarningOnly</b></td></tr><tr><td>*</td><td>Confirm that the returned response payload is the specified resource.</td><td>response</td><td><a href=\"http://build.fhir.org/patient.html\">Patient</a></td><td>false</td><td>false</td></tr></table></blockquote><blockquote><p><b>action</b></p><h3>Asserts</h3><table class=\"grid\"><tr><td>-</td><td><b>Description</b></td><td><b>Direction</b></td><td><b>StopTestOnFail</b></td><td><b>ValidateProfileId</b></td><td><b>WarningOnly</b></td></tr><tr><td>*</td><td>Confirm that the returned resource conforms to the specified profile.</td><td>response</td><td>false</td><td>PatientProfile</td><td>false</td></tr></table></blockquote></blockquote></div>"
+  ];
+  fhir:TestScript.url [ fhir:value "http://hl7.org/fhir/us/carin-bb/TestScript/read-validate-patient-json"];
+  fhir:TestScript.version [ fhir:value "1.0.0"];
+  fhir:TestScript.name [ fhir:value "read-validate-patient-json"];
+  fhir:TestScript.title [ fhir:value "HL7 FHIR R4 TestScript Read Validate"];
+  fhir:TestScript.status [ fhir:value "active"];
+  fhir:TestScript.date [ fhir:value "2022-06-08"^^xsd:date];
+  fhir:TestScript.publisher [ fhir:value "My Organization"];
+  fhir:TestScript.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "My Organization" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "http://example.com/committees" ]
+     ], [
+       fhir:index 1;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "my-group@example.com" ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:ContactDetail.name [ fhir:value "Bob Smith" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "bobsmith@example.com" ];
+       fhir:ContactPoint.use [ fhir:value "work" ]
+     ]
+  ];
+  fhir:TestScript.description [ fhir:value "Example TestScript to test resource read and profile validation"];
+  fhir:TestScript.jurisdiction [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://unstats.un.org/unsd/methods/m49/m49.htm" ];
+       fhir:Coding.code [ fhir:value "001" ];
+       fhir:Coding.display [ fhir:value "World" ]
+     ]
+  ];
+  fhir:TestScript.copyright [ fhir:value "(c) Health Level 7 (HL7) International 2022"];
+  fhir:TestScript.origin [
+     fhir:index 0;
+     fhir:TestScript.origin.index [ fhir:value "1"^^xsd:integer ];
+     fhir:TestScript.origin.profile [
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/testscript-profile-origin-types" ];
+       fhir:Coding.code [ fhir:value "FHIR-Client" ]
+     ]
+  ];
+  fhir:TestScript.destination [
+     fhir:index 0;
+     fhir:TestScript.destination.index [ fhir:value "1"^^xsd:integer ];
+     fhir:TestScript.destination.profile [
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/testscript-profile-destination-types" ];
+       fhir:Coding.code [ fhir:value "FHIR-Server" ]
+     ]
+  ];
+  fhir:TestScript.scope [
+     fhir:index 0;
+     fhir:TestScript.scope.artifact [
+       fhir:value "http://openhie.org/fhir/food-allergy/Questionnaire/food-allergy-questionnaire";
+       fhir:link <http://openhie.org/fhir/food-allergy/Questionnaire/food-allergy-questionnaire>
+     ];
+     fhir:TestScript.scope.conformance [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.code [ fhir:value "required" ]
+       ]
+     ]
+  ];
+  fhir:TestScript.profile [
+     fhir:index 0;
+     fhir:link <http://openhie.org/fhir/food-allergy/Questionnaire/food-allergy-questionnaire>;
+     fhir:Element.id [ fhir:value "AllergyQ" ];
+     fhir:Reference.reference [ fhir:value "http://openhie.org/fhir/food-allergy/Questionnaire/food-allergy-questionnaire" ]
+  ];
+  fhir:TestScript.variable [
+     fhir:index 0;
+     fhir:TestScript.variable.name [ fhir:value "patientResourceId" ];
+     fhir:TestScript.variable.defaultValue [ fhir:value "example" ];
+     fhir:TestScript.variable.description [ fhir:value "Enter a known resource id on the destination system." ];
+     fhir:TestScript.variable.hint [ fhir:value "[resource.id]" ]
+  ];
+  fhir:TestScript.test [
+     fhir:index 0;
+     fhir:Element.id [ fhir:value "PatientReadValidate" ];
+     fhir:TestScript.test.name [ fhir:value "PatientReadValidate" ];
+     fhir:TestScript.test.description [ fhir:value "Test resource read on destination server and assert returned resource passes validation" ];
+     fhir:TestScript.test.action [
+       fhir:index 0;
+       fhir:TestScript.test.action.operation [
+         fhir:TestScript.setup.action.operation.type [
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/testscript-operation-codes" ];
+           fhir:Coding.code [ fhir:value "read" ]
+         ];
+         fhir:TestScript.setup.action.operation.resource [ fhir:value "Patient" ];
+         fhir:TestScript.setup.action.operation.description [ fhir:value "ResourceRead" ];
+         fhir:TestScript.setup.action.operation.accept [ fhir:value "json" ];
+         fhir:TestScript.setup.action.operation.contentType [ fhir:value "json" ];
+         fhir:TestScript.setup.action.operation.destination [ fhir:value "1"^^xsd:integer ];
+         fhir:TestScript.setup.action.operation.encodeRequestUrl [ fhir:value "true"^^xsd:boolean ];
+         fhir:TestScript.setup.action.operation.origin [ fhir:value "1"^^xsd:integer ];
+         fhir:TestScript.setup.action.operation.params [ fhir:value "/${patientResourceId}" ]
+       ]
+     ], [
+       fhir:index 1;
+       fhir:TestScript.test.action.assert [
+         fhir:TestScript.setup.action.assert.description [ fhir:value "Confirm that the returned response code is 200 OK." ];
+         fhir:TestScript.setup.action.assert.direction [ fhir:value "response" ];
+         fhir:TestScript.setup.action.assert.responseCode [ fhir:value "200" ];
+         fhir:TestScript.setup.action.assert.stopTestOnFail [ fhir:value "false"^^xsd:boolean ];
+         fhir:TestScript.setup.action.assert.warningOnly [ fhir:value "false"^^xsd:boolean ]
+       ]
+     ], [
+       fhir:index 2;
+       fhir:TestScript.test.action.assert [
+         fhir:TestScript.setup.action.assert.description [ fhir:value "Confirm that the returned response payload is the specified resource." ];
+         fhir:TestScript.setup.action.assert.direction [ fhir:value "response" ];
+         fhir:TestScript.setup.action.assert.resource [ fhir:value "Patient" ];
+         fhir:TestScript.setup.action.assert.stopTestOnFail [ fhir:value "false"^^xsd:boolean ];
+         fhir:TestScript.setup.action.assert.warningOnly [ fhir:value "false"^^xsd:boolean ]
+       ]
+     ], [
+       fhir:index 3;
+       fhir:TestScript.test.action.assert [
+         fhir:TestScript.setup.action.assert.description [ fhir:value "Confirm that the returned resource conforms to the specified profile." ];
+         fhir:TestScript.setup.action.assert.direction [ fhir:value "response" ];
+         fhir:TestScript.setup.action.assert.stopTestOnFail [ fhir:value "false"^^xsd:boolean ];
+         fhir:TestScript.setup.action.assert.validateProfileId [ fhir:value "PatientProfile" ];
+         fhir:TestScript.setup.action.assert.warningOnly [ fhir:value "false"^^xsd:boolean ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://example.com/fhir/testable/TestScript/read-validate-patient-json.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+
