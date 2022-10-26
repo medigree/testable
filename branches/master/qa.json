@@ -1,10 +1,10 @@
 {
   "url": "http://example.com/fhir/testable",
   "name": "TestableIG",
-  "package-id": "testable-ig",
+  "package-id": "testable",
   "ig-ver": "1.0.0",
-  "date": "Wed, 26 Oct, 2022 17:55:46 +0000",
-  "errs": 5,
+  "date": "Wed, 26 Oct, 2022 18:11:12 +0000",
+  "errs": 4,
   "warnings": 23,
   "hints": 0,
   "version": "5.0.0-ballot",
