@@ -63,11 +63,11 @@ hapi:
     #    server_address: http://hapi.fhir.org/baseR4
     #    defer_indexing_for_codesystems_of_size: 101
     install_transitive_ig_dependencies: false
-    implementationguides:
-      r5demo:
-        url: https://costateixeira.github.io/r5demo/package.tgz
-        name: r5demo
-        version: 1.0.0
+#    implementationguides:
+#      r5demo:
+#        url: https://costateixeira.github.io/r5demo/package.tgz
+#        name: r5demo
+#        version: 1.0.0
     ###    example from registry (packages.fhir.org)
     #      swiss:
     #        name: swiss.mednet.fhir
@@ -153,7 +153,7 @@ hapi:
     tester:
       home:
         name: Local Tester
-        server_address: 'http://localhost:8085/fhir'
+        server_address: 'http://localhost:8080/fhir'
         refuse_to_fetch_third_party_urls: false
         fhir_version: R5
       global:
