@@ -7,7 +7,7 @@
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 
 
-id: testable-ig
+id: testable
 canonical: http://example.com/fhir/testable
 url: http://example.com/fhir/testable
 name: TestableIG
