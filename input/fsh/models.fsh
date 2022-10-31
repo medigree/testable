@@ -14,3 +14,35 @@ Description:    "Food Allergy information model"
   * certitude 0..1 CodeableConcept "How certain we are that the cause of the reaction was the allergen indicated" "How certain we are that the cause of the reaction was the allergen indicated"
   * exposure 0..1 CodeableConcept "The exposure route to the substance" "The exposure route to the substance"
   * note 0..1 string "Additional text note about the allergic reaction" "Additional text note about the allergic reaction"
+
+
+
+Logical: TestPlan
+Title: "Test Plan"
+Description:    "Test Plan"
+
+* url 0..1 uri "canonical identifier"
+* identifier 0..* Identifier "Business identifier"
+* version 0..* string "version"
+* name 0..* string "Name"
+* title 0..* string "Title"
+* status 0..* code "Status"
+* date 0..* dateTime "date"
+* publisher 0..* string "Publisher"
+* contact 0..* ContactDetail "Contact"
+* description 0..* markdown "Description"
+* jurisdiction 0..* CodeableConcept "Jurisdiction"
+* purpose 0..* markdown "purpose"
+* copyright 0..* markdown "Copyright"
+
+* category 0..* CodeableConcept "The category of the Test Plan - can be acceptance, unit, performance,..."
+* scope 0..* Reference "What is being tested with this Test Plan - a conformance resource, or narrative criteria, or an external reference..."
+
+* testCase 0..* BackboneElement "The test cases that are part of this plan"
+  * sequence 0..1 integer "Sequence of testing"
+  * scope 0..* Reference "Specific test scope for one test case"
+  * testScript 0..* Reference(TestScript) "The testScripts that are included in this test case"
+  * dependencies 0..* string "Any dependencies required for the test case"
+  * testData 0..* BackboneElement "The test data used in the test case"
+    * content 0..1 Reference "The actual test resources"
+    * definition 0..1 Reference "Pointer to a definition of test resources - narrative or structured e.g. synthetic data generation, et."
