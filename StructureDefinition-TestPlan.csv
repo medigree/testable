@@ -1,0 +1,90 @@
+"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)","Mapping: RIM Mapping"
+"TestPlan","TestPlan","","","",0,*,"","","","","Test Plan","Test Plan","","","","","","","","","",,,,,"",,,,"Base",0,*,"","","n/a"
+"TestPlan.url","TestPlan.url","","","",0,1,"","","","uri {[]} {[]}
+","canonical identifier","canonical identifier","","","","","","","","","",,,,,"",,,,"TestPlan.url",0,1,"",""
+"TestPlan.identifier","TestPlan.identifier","","","",0,*,"","","","Identifier {[]} {[]}
+","Business identifier","Business identifier","","","","","","","","","",,,,,"",,,,"TestPlan.identifier",0,*,"",""
+"TestPlan.version","TestPlan.version","","","",0,*,"","","","string {[]} {[]}
+","version","version","","","","","","","","","",,,,,"",,,,"TestPlan.version",0,*,"",""
+"TestPlan.name","TestPlan.name","","","",0,*,"","","","string {[]} {[]}
+","Name","Name","","","","","","","","","",,,,,"",,,,"TestPlan.name",0,*,"",""
+"TestPlan.title","TestPlan.title","","","",0,*,"","","","string {[]} {[]}
+","Title","Title","","","","","","","","","",,,,,"",,,,"TestPlan.title",0,*,"",""
+"TestPlan.status","TestPlan.status","","","",0,*,"","","","code {[]} {[]}
+","Status","Status","","","","","","","","","",,,,,"",,,,"TestPlan.status",0,*,"",""
+"TestPlan.date","TestPlan.date","","","",0,*,"","","","dateTime {[]} {[]}
+","date","date","","","","","","","","","",,,,,"",,,,"TestPlan.date",0,*,"",""
+"TestPlan.publisher","TestPlan.publisher","","","",0,*,"","","","string {[]} {[]}
+","Publisher","Publisher","","","","","","","","","",,,,,"",,,,"TestPlan.publisher",0,*,"",""
+"TestPlan.contact","TestPlan.contact","","","",0,*,"","","","ContactDetail {[]} {[]}
+","Contact","Contact","","","","","","","","","",,,,,"",,,,"TestPlan.contact",0,*,"",""
+"TestPlan.description","TestPlan.description","","","",0,*,"","","","markdown {[]} {[]}
+","Description","Description","","","","","","","","","",,,,,"",,,,"TestPlan.description",0,*,"",""
+"TestPlan.jurisdiction","TestPlan.jurisdiction","","","",0,*,"","","","CodeableConcept {[]} {[]}
+","Jurisdiction","Jurisdiction","","","","","","","","","",,,,,"",,,,"TestPlan.jurisdiction",0,*,"",""
+"TestPlan.purpose","TestPlan.purpose","","","",0,*,"","","","markdown {[]} {[]}
+","purpose","purpose","","","","","","","","","",,,,,"",,,,"TestPlan.purpose",0,*,"",""
+"TestPlan.copyright","TestPlan.copyright","","","",0,*,"","","","markdown {[]} {[]}
+","Copyright","Copyright","","","","","","","","","",,,,,"",,,,"TestPlan.copyright",0,*,"",""
+"TestPlan.category","TestPlan.category","","","",0,*,"","","","CodeableConcept {[]} {[]}
+","The category of the Test Plan - can be acceptance, unit, performance,...","The category of the Test Plan - can be acceptance, unit, performance,...","","","","","","","","","",,,,,"",,,,"TestPlan.category",0,*,"",""
+"TestPlan.scope","TestPlan.scope","","","",0,*,"","","","Reference {[]} {[]}
+","What is being tested with this Test Plan - a conformance resource, or narrative criteria, or an external reference...","What is being tested with this Test Plan - a conformance resource, or narrative criteria, or an external reference...","","","","","","","","","",,,,,"",,,,"TestPlan.scope",0,*,"",""
+"TestPlan.testCase","TestPlan.testCase","","","",0,*,"","","","BackboneElement {[]} {[]}
+","The test cases that are part of this plan","The test cases that are part of this plan","","","","","","","","","",,,,,"",,,,"TestPlan.testCase",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}"
+"TestPlan.testCase.id","TestPlan.testCase.id","","","",0,1,"","","","id {[]} {[]}
+","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
+"TestPlan.testCase.extension","TestPlan.testCase.extension","","extensions
+user content","",0,*,"","","","Extension {[]} {[]}
+","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a"
+"TestPlan.testCase.id","TestPlan.testCase.id","","","",0,1,"","","","id {[]} {[]}
+","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
+"TestPlan.testCase.extension","TestPlan.testCase.extension","","extensions
+user content","",0,*,"","","","Extension {[]} {[]}
+","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a"
+"TestPlan.testCase.modifierExtension","TestPlan.testCase.modifierExtension","","extensions
+user contentmodifiers","",0,*,"","Y","Y","Extension {[]} {[]}
+","Extensions that cannot be ignored even if unrecognized","May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.
+
+Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself).","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](http://build.fhir.org/extensibility.html#modifierExtension).","","","","","","","",,,,,"",,,,"BackboneElement.modifierExtension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","N/A"
+"TestPlan.testCase.sequence","TestPlan.testCase.sequence","","","",0,1,"","","","integer {[]} {[]}
+","Sequence of testing","Sequence of testing","","","","","","","","","",,,,,"",,,,"TestPlan.testCase.sequence",0,1,"",""
+"TestPlan.testCase.scope","TestPlan.testCase.scope","","","",0,*,"","","","Reference {[]} {[]}
+","Specific test scope for one test case","Specific test scope for one test case","","","","","","","","","",,,,,"",,,,"TestPlan.testCase.scope",0,*,"",""
+"TestPlan.testCase.testScript","TestPlan.testCase.testScript","","","",0,*,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/TestScript]]}
+","The testScripts that are included in this test case","The testScripts that are included in this test case","","","","","","","","","",,,,,"",,,,"TestPlan.testCase.testScript",0,*,"",""
+"TestPlan.testCase.dependencies","TestPlan.testCase.dependencies","","","",0,*,"","","","string {[]} {[]}
+","Any dependencies required for the test case","Any dependencies required for the test case","","","","","","","","","",,,,,"",,,,"TestPlan.testCase.dependencies",0,*,"",""
+"TestPlan.testCase.testData","TestPlan.testCase.testData","","","",0,*,"","","","BackboneElement {[]} {[]}
+","The test data used in the test case","The test data used in the test case","","","","","","","","","",,,,,"",,,,"TestPlan.testCase.testData",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}"
+"TestPlan.testCase.testData.id","TestPlan.testCase.testData.id","","","",0,1,"","","","id {[]} {[]}
+","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
+"TestPlan.testCase.testData.extension","TestPlan.testCase.testData.extension","","extensions
+user content","",0,*,"","","","Extension {[]} {[]}
+","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a"
+"TestPlan.testCase.testData.id","TestPlan.testCase.testData.id","","","",0,1,"","","","id {[]} {[]}
+","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
+"TestPlan.testCase.testData.extension","TestPlan.testCase.testData.extension","","extensions
+user content","",0,*,"","","","Extension {[]} {[]}
+","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a"
+"TestPlan.testCase.testData.modifierExtension","TestPlan.testCase.testData.modifierExtension","","extensions
+user contentmodifiers","",0,*,"","Y","Y","Extension {[]} {[]}
+","Extensions that cannot be ignored even if unrecognized","May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.
+
+Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself).","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](http://build.fhir.org/extensibility.html#modifierExtension).","","","","","","","",,,,,"",,,,"BackboneElement.modifierExtension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","N/A"
+"TestPlan.testCase.testData.content","TestPlan.testCase.testData.content","","","",0,1,"","","","Reference {[]} {[]}
+","The actual test resources","The actual test resources","","","","","","","","","",,,,,"",,,,"TestPlan.testCase.testData.content",0,1,"",""
+"TestPlan.testCase.testData.definition","TestPlan.testCase.testData.definition","","","",0,1,"","","","Reference {[]} {[]}
+","Pointer to a definition of test resources - narrative or structured e.g. synthetic data generation, et.","Pointer to a definition of test resources - narrative or structured e.g. synthetic data generation, et.","","","","","","","","","",,,,,"",,,,"TestPlan.testCase.testData.definition",0,1,"",""
