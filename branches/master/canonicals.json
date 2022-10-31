@@ -21,6 +21,13 @@
     "name": "FoodAllergyModel"
   },
   {
+    "id": "TestPlan",
+    "type": "StructureDefinition",
+    "url": "http://example.com/fhir/testable/StructureDefinition/TestPlan",
+    "version": "1.0.0",
+    "name": "TestPlan"
+  },
+  {
     "id": "FoodAllergyVS",
     "type": "ValueSet",
     "url": "http://example.com/fhir/testable/ValueSet/FoodAllergyVS",
