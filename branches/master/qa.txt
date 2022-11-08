@@ -1,16 +1,16 @@
 ﻿TestableIG : Validation Results
 =========================================
 
-err = 23, warn = 23, info = 0
-IG Publisher Version: 1.2.12
-Generated Mon Oct 31 09:51:51 UTC 2022. FHIR version 5.0.0-ballot for testable#1.0.0 (canonical = http://example.com/fhir/testable)
+err = 4, warn = 23, info = 0
+IG Publisher Version: 1.2.14
+Generated Tue Nov 08 21:40:21 UTC 2022. FHIR version 5.0.0-ballot for testable#1.0.0 (canonical = http://example.com/fhir/testable)
  Build Errors : 0 / 5 / 0
  /github/workspace/fsh-generated/resources/AllergyIntolerance-MyPeanutAllergy : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ImplementationGuide-testable : 2 / 0 / 1
  /github/workspace/fsh-generated/resources/Questionnaire-food-allergy-questionnaire : 2 / 13 / 4
  /github/workspace/fsh-generated/resources/StructureDefinition-FoodAllergy : 0 / 2 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-FoodAllergyModel : 7 / 0 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-TestPlan : 12 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-FoodAllergyModel : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-TestPlan : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/TestScript-read-validate-patient-json : 0 / 2 / 1
  /github/workspace/fsh-generated/resources/ValueSet-FoodAllergyVS : 0 / 1 / 1
 </table>
@@ -18,7 +18,7 @@ Generated Mon Oct 31 09:51:51 UTC 2022. FHIR version 5.0.0-ballot for testable#1
 WARNING: ImplementationGuide.url: The canonical URL for an Implementation Guide must point directly to the implementation guide resource, not to the Implementation Guide as a whole
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource AllergyIntolerance/MyPeanutAllergy.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
-WARNING: 3: The HTML fragment 'dependency-table.xhtml' is not included anywhere in the produced implementation guide
+WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
 == fsh-generated/resources/AllergyIntolerance-MyPeanutAllergy.json ==
 == fsh-generated/resources/ImplementationGuide-testable.json ==
@@ -44,26 +44,7 @@ ERROR: /github/workspace/fsh-generated/resources/Questionnaire-food-allergy-ques
 WARNING: StructureDefinition/FoodAllergy: StructureDefinition.snapshot.element[0]: Rule eld-27: 'Mappings SHOULD be unique by key' Failed
 WARNING: StructureDefinition/FoodAllergy: StructureDefinition.snapshot.element[16]: Rule eld-27: 'Mappings SHOULD be unique by key' Failed
 == fsh-generated/resources/StructureDefinition-FoodAllergyModel.json ==
-ERROR: http://example.com/fhir/testable/StructureDefinition/FoodAllergyModel.FoodAllergyModel.reactions.id: Duplicate Element id FoodAllergyModel.reactions.id
-ERROR: http://example.com/fhir/testable/StructureDefinition/FoodAllergyModel.FoodAllergyModel.reactions.extension: Duplicate Element id FoodAllergyModel.reactions.extension
-ERROR: StructureDefinition/FoodAllergyModel: StructureDefinition: Rule sdf-1: 'Element paths must be unique unless the structure is a constraint' Failed
-ERROR: StructureDefinition/FoodAllergyModel: StructureDefinition: Rule sdf-16: 'All element definitions must have unique ids (snapshot)' Failed (ids: FoodAllergyModel,FoodAllergyModel.patient,FoodAllergyModel.allergen,FoodAllergyModel.clinicalStatus,FoodAllergyModel.verificationStatus,FoodAllergyModel.recordedDate,FoodAllergyModel.recorder,FoodAllergyModel.asserter,FoodAllergyModel.reactions,FoodAllergyModel.reactions.id,FoodAllergyModel.reactions.extension,FoodAllergyModel.reactions.id,FoodAllergyModel.reactions.extension,FoodAllergyModel.reactions.modifierExtension,FoodAllergyModel.reactions.manifestation,FoodAllergyModel.reactions.certitude,FoodAllergyModel.reactions.exposure,FoodAllergyModel.reactions.note) (log:  (ids: FoodAllergyModel,FoodAllergyModel.patient,FoodAllergyModel.allergen,FoodAllergyModel.clinicalStatus,FoodAllergyModel.verificationStatus,FoodAllergyModel.recordedDate,FoodAllergyModel.recorder,FoodAllergyModel.asserter,FoodAllergyModel.reactions,FoodAllergyModel.reactions.id,FoodAllergyModel.reactions.extension,FoodAllergyModel.reactions.id,FoodAllergyModel.reactions.extension,FoodAllergyModel.reactions.modifierExtension,FoodAllergyModel.reactions.manifestation,FoodAllergyModel.reactions.certitude,FoodAllergyModel.reactions.exposure,FoodAllergyModel.reactions.note))
-ERROR: StructureDefinition/FoodAllergyModel: StructureDefinition.snapshot.element[8]: Rule eld-14: 'Constraints must be unique by key' Failed
-ERROR: StructureDefinition/FoodAllergyModel: StructureDefinition.snapshot.element[11]: Duplicate id value 'FoodAllergyModel.reactions.id'
-ERROR: StructureDefinition/FoodAllergyModel: StructureDefinition.snapshot.element[12]: Duplicate id value 'FoodAllergyModel.reactions.extension'
 == fsh-generated/resources/StructureDefinition-TestPlan.json ==
-ERROR: http://example.com/fhir/testable/StructureDefinition/TestPlan.TestPlan.testCase.id: Duplicate Element id TestPlan.testCase.id
-ERROR: http://example.com/fhir/testable/StructureDefinition/TestPlan.TestPlan.testCase.extension: Duplicate Element id TestPlan.testCase.extension
-ERROR: http://example.com/fhir/testable/StructureDefinition/TestPlan.TestPlan.testCase.testData.id: Duplicate Element id TestPlan.testCase.testData.id
-ERROR: http://example.com/fhir/testable/StructureDefinition/TestPlan.TestPlan.testCase.testData.extension: Duplicate Element id TestPlan.testCase.testData.extension
-ERROR: StructureDefinition/TestPlan: StructureDefinition: Rule sdf-1: 'Element paths must be unique unless the structure is a constraint' Failed
-ERROR: StructureDefinition/TestPlan: StructureDefinition: Rule sdf-16: 'All element definitions must have unique ids (snapshot)' Failed (ids: TestPlan,TestPlan.url,TestPlan.identifier,TestPlan.version,TestPlan.name,TestPlan.title,TestPlan.status,TestPlan.date,TestPlan.publisher,TestPlan.contact,TestPlan.description,TestPlan.jurisdiction,TestPlan.purpose,TestPlan.copyright,TestPlan.category,TestPlan.scope,TestPlan.testCase,TestPlan.testCase.id,TestPlan.testCase.extension,TestPlan.testCase.id,TestPlan.testCase.extension,TestPlan.testCase.modifierExtension,TestPlan.testCase.sequence,TestPlan.testCase.scope,TestPlan.testCase.testScript,TestPlan.testCase.dependencies,TestPlan.testCase.testData,TestPlan.testCase.testData.id,TestPlan.testCase.testData.extension,TestPlan.testCase.testData.id,TestPlan.testCase.testData.extension,TestPlan.testCase.testData.modifierExtension,TestPlan.testCase.testData.content,TestPlan.testCase.testData.definition) (log:  (ids: TestPlan,TestPlan.url,TestPlan.identifier,TestPlan.version,TestPlan.name,TestPlan.title,TestPlan.status,TestPlan.date,TestPlan.publisher,TestPlan.contact,TestPlan.description,TestPlan.jurisdiction,TestPlan.purpose,TestPlan.copyright,TestPlan.category,TestPlan.scope,TestPlan.testCase,TestPlan.testCase.id,TestPlan.testCase.extension,TestPlan.testCase.id,TestPlan.testCase.extension,TestPlan.testCase.modifierExtension,TestPlan.testCase.sequence,TestPlan.testCase.scope,TestPlan.testCase.testScript,TestPlan.testCase.dependencies,TestPlan.testCase.testData,TestPlan.testCase.testData.id,TestPlan.testCase.testData.extension,TestPlan.testCase.testData.id,TestPlan.testCase.testData.extension,TestPlan.testCase.testData.modifierExtension,TestPlan.testCase.testData.content,TestPlan.testCase.testData.definition))
-ERROR: StructureDefinition/TestPlan: StructureDefinition.snapshot.element[16]: Rule eld-14: 'Constraints must be unique by key' Failed
-ERROR: StructureDefinition/TestPlan: StructureDefinition.snapshot.element[19]: Duplicate id value 'TestPlan.testCase.id'
-ERROR: StructureDefinition/TestPlan: StructureDefinition.snapshot.element[20]: Duplicate id value 'TestPlan.testCase.extension'
-ERROR: StructureDefinition/TestPlan: StructureDefinition.snapshot.element[26]: Rule eld-14: 'Constraints must be unique by key' Failed
-ERROR: StructureDefinition/TestPlan: StructureDefinition.snapshot.element[29]: Duplicate id value 'TestPlan.testCase.testData.id'
-ERROR: StructureDefinition/TestPlan: StructureDefinition.snapshot.element[30]: Duplicate id value 'TestPlan.testCase.testData.extension'
 == fsh-generated/resources/TestScript-read-validate-patient-json.json ==
 WARNING: TestScript/read-validate-patient-json: TestScript: Rule cnl-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
 WARNING: TestScript/read-validate-patient-json: TestScript.scope[0].conformance.coding[0]: A code with no system has no defined meaning. A system should be provided
