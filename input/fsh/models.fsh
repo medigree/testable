@@ -38,6 +38,15 @@ Description:    "Test Plan"
 * category 0..* CodeableConcept "The category of the Test Plan - can be acceptance, unit, performance,..."
 * scope 0..* Reference "What is being tested with this Test Plan - a conformance resource, or narrative criteria, or an external reference..."
 
+
+* testTools 0..* markdown "A description of test tools to be used in the test plan - narrative for now"
+
+* enterCriteria 0..* BackboneElement "The required criteria to execute the test plan - e.g. preconditions, previous tests..."
+  * description 0..1 markdown "description of the criteria"
+  * predecessor 0..1 Reference "link to predecessor test plans"
+
+* successCriteria 0..* markdown "The threshold or criteria for the test plan to be considered successfully executed - narrative"
+
 * testCase 0..* BackboneElement "The test cases that are part of this plan"
   * sequence 0..1 integer "Sequence of testing"
   * scope 0..* Reference "Specific test scope for one test case"
