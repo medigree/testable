@@ -60,12 +60,17 @@
   fhir:ImplementationGuide.dependsOn [
      fhir:index 0;
      fhir:Element.id [ fhir:value "hl7tx" ];
+     fhir:Element.extension [
+       fhir:index 0;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment" ];
+       fhir:Extension.valueMarkdown [ fhir:value "Automatically added as a dependency - all IGs depend on HL7 Terminology" ]
+     ];
      fhir:ImplementationGuide.dependsOn.uri [
        fhir:value "http://terminology.hl7.org/ImplementationGuide/hl7.terminology";
        fhir:link <http://terminology.hl7.org/ImplementationGuide/hl7.terminology>
      ];
      fhir:ImplementationGuide.dependsOn.packageId [ fhir:value "hl7.terminology.r5" ];
-     fhir:ImplementationGuide.dependsOn.version [ fhir:value "4.0.0" ]
+     fhir:ImplementationGuide.dependsOn.version [ fhir:value "5.0.0" ]
   ];
   fhir:ImplementationGuide.definition [
      fhir:Element.extension [

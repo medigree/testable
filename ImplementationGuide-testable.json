@@ -57,9 +57,15 @@
   "dependsOn": [
     {
       "id": "hl7tx",
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment",
+          "valueMarkdown": "Automatically added as a dependency - all IGs depend on HL7 Terminology"
+        }
+      ],
       "uri": "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
       "packageId": "hl7.terminology.r5",
-      "version": "4.0.0"
+      "version": "5.0.0"
     }
   ],
   "definition": {
