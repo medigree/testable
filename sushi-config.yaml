@@ -9,7 +9,7 @@
 
 id: testable
 canonical: http://example.com/fhir/testable
-url: http://example.com/fhir/testable
+url: http://example.com/fhir/testable/ImplementationGuide/testable
 name: TestableIG
 title: "HL7 FHIR Testable Implementation Guide"
 description: Testable IG.

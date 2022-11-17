@@ -278,9 +278,9 @@ InstanceOf: TestScript
 * insert read-validate-test(Patient, read-validate-patient-json, #json, "PatientProfile")
 * profile[+]
   * id = "AllergyQ"
-  * reference = "http://openhie.org/fhir/food-allergy/Questionnaire/food-allergy-questionnaire"
+  * reference = "http://example.com/fhir/testable/Questionnaire/food-allergy-questionnaire"
 * scope[+]
-  * artifact = "http://openhie.org/fhir/food-allergy/Questionnaire/food-allergy-questionnaire"
+  * artifact = "http://example.com/fhir/testable/Questionnaire/food-allergy-questionnaire"
   * conformance = #required
 
 

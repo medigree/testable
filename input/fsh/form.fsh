@@ -93,7 +93,7 @@ Usage: #definition
 * language = #en
 * status = #draft
 
-* url = "http://openhie.org/fhir/food-allergy/Questionnaire/food-allergy-questionnaire"
+* url = "http://example.com/fhir/testable/Questionnaire/food-allergy-questionnaire"
 
 * item[+].linkId = "title"
 * item[=].text = "Food Allergy report"
