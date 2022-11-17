@@ -1,19 +1,13 @@
-management:
-  endpoints:
-    web:
-      exposure:
-        include: "health,prometheus"
 spring:
   main:
     allow-circular-references: true
-    #allow-bean-definition-overriding: true
+    allow-bean-definition-overriding: true
   flyway:
     enabled: false
     check-location: false
     baselineOnMigrate: true
   datasource:
     url: 'jdbc:h2:file:./target/database/h2'
-    #url: jdbc:h2:mem:test_mem
     username: sa
     password: null
     driverClassName: org.h2.Driver
@@ -47,12 +41,31 @@ spring:
   batch:
     job:
       enabled: false
+
+
+server:
+  servlet:
+    context-path: /
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      probes:
+        enabled: true
+
+
 hapi:
   fhir:
     ### This enables the swagger-ui at /fhir/swagger-ui/index.html as well as the /fhir/api-docs (see https://hapifhir.io/hapi-fhir/docs/server_plain/openapi.html)
     openapi_enabled: true
+    staticLocation: file:/apps/
+    staticContentBase: "apps"
     ### This is the FHIR version. Choose between, DSTU2, DSTU3, R4 or R5
-    fhir_version: R5
+    fhir_version: R4B
     ### enable to use the ApacheProxyAddressStrategy which uses X-Forwarded-* headers
     ### to determine the FHIR server address
     #   use_apache_address_strategy: false
@@ -62,12 +75,14 @@ hapi:
     ### enable to set the Server URL
     #    server_address: http://hapi.fhir.org/baseR4
     #    defer_indexing_for_codesystems_of_size: 101
+
+
     install_transitive_ig_dependencies: false
-#    implementationguides:
-#      r5demo:
-#        url: https://costateixeira.github.io/r5demo/package.tgz
-#        name: r5demo
-#        version: 1.0.0
+    implementationguides:
+      r5demo:
+        url: https://hl7-eu.github.io/unicom-ig/branches/r5-r4b/package.tgz
+        name: hl7.eu.fhir.unicom
+        version: 0.1.0
     ###    example from registry (packages.fhir.org)
     #      swiss:
     #        name: swiss.mednet.fhir
@@ -87,10 +102,10 @@ hapi:
     #    allow_cascading_deletes: true
     #    allow_contains_searches: true
     #    allow_external_references: true
-    #    allow_multiple_delete: true
+    allow_multiple_delete: true
     #    allow_override_default_search_params: true
     #    auto_create_placeholder_reference_targets: false
-    #    cql_enabled: true
+    cql_enabled: true
     #    default_encoding: JSON
     #    default_pretty_print: true
     #    default_page_size: 20
@@ -143,7 +158,7 @@ hapi:
     #        Path[${servletPath}] Source[${requestHeader.x-forwarded-for}]
     #        Operation[${operationType} ${operationName} ${idOrResourceName}]
     #        UA[${requestHeader.user-agent}] Params[${requestParameters}]
-    #        ResponseEncoding[${responseEncodingNoDefault}]
+        #        ResponseEncoding[${responseEncodingNoDefault}]
     #      log_exceptions: true
     #      name: fhirtest.access
     #    max_binary_size: 104857600
@@ -155,12 +170,12 @@ hapi:
         name: Local Tester
         server_address: 'http://localhost:8080/fhir'
         refuse_to_fetch_third_party_urls: false
-        fhir_version: R5
+        fhir_version: R4B
       global:
         name: Global Tester
         server_address: "http://hapi.fhir.org/baseR4"
         refuse_to_fetch_third_party_urls: false
-        fhir_version: R5
+        fhir_version: R4B
     #    validation:
     #      requests_enabled: true
     #      responses_enabled: true
