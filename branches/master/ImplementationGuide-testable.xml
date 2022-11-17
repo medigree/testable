@@ -3,10 +3,10 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir">
   <id value="testable"/>
   <text>
-    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>TestableIG</h2><p>The official URL for this implementation guide is: </p><pre>http://example.com/fhir/testable</pre><div><p>Testable IG.</p>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>TestableIG</h2><p>The official URL for this implementation guide is: </p><pre>http://example.com/fhir/testable/ImplementationGuide/testable</pre><div><p>Testable IG.</p>
 </div></div>
   </text>
-  <url value="http://example.com/fhir/testable"/>
+  <url value="http://example.com/fhir/testable/ImplementationGuide/testable"/>
   <version value="1.0.0"/>
   <name value="TestableIG"/>
   <title value="HL7 FHIR Testable Implementation Guide"/>
@@ -129,7 +129,7 @@
         <valueString value="path-history"/>
       </extension>
       <extension url="value">
-        <valueString value="history.html"/>
+        <valueString value="http://example.com/fhir/testable/history.html"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -518,7 +518,7 @@
         <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
         <code value="path-history"/>
       </code>
-      <value value="history.html"/>
+      <value value="http://example.com/fhir/testable/history.html"/>
     </parameter>
     <parameter>
       <code>

@@ -2,9 +2,16 @@
   {
     "id": "testable",
     "type": "ImplementationGuide",
-    "url": "http://example.com/fhir/testable",
+    "url": "http://example.com/fhir/testable/ImplementationGuide/testable",
     "version": "1.0.0",
     "name": "TestableIG"
+  },
+  {
+    "id": "food-allergy-questionnaire",
+    "type": "Questionnaire",
+    "url": "http://example.com/fhir/testable/Questionnaire/food-allergy-questionnaire",
+    "version": "1.0.0",
+    "name": "FoodAllergyQuestionnaire"
   },
   {
     "id": "FoodAllergy",
@@ -40,12 +47,5 @@
     "url": "http://hl7.org/fhir/us/carin-bb/TestScript/read-validate-patient-json",
     "version": "1.0.0",
     "name": "read-validate-patient-json"
-  },
-  {
-    "id": "food-allergy-questionnaire",
-    "type": "Questionnaire",
-    "url": "http://openhie.org/fhir/food-allergy/Questionnaire/food-allergy-questionnaire",
-    "version": "1.0.0",
-    "name": "FoodAllergyQuestionnaire"
   }
 ]

@@ -1,11 +1,11 @@
 {
-  "url": "http://example.com/fhir/testable",
+  "url": "http://example.com/fhir/testable/ImplementationGuide/testable",
   "name": "TestableIG",
   "package-id": "testable",
   "ig-ver": "1.0.0",
-  "date": "Thu, 17 Nov, 2022 16:05:46 +0000",
-  "errs": 4,
-  "warnings": 23,
+  "date": "Thu, 17 Nov, 2022 16:07:39 +0000",
+  "errs": 0,
+  "warnings": 22,
   "hints": 0,
   "version": "5.0.0-ballot",
   "tool": "5.0.0-ballot (3)"

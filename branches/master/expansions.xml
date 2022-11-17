@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="606ae7c8-9d1f-45de-9538-f455f676fede"/>
+  <id value="7fbdbcdc-f868-42e7-b2be-cdcde0590205"/>
   <meta>
-    <lastUpdated value="2022-11-17T16:05:46.687+00:00"/>
+    <lastUpdated value="2022-11-17T16:07:39.065+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
-    <fullUrl value="http://openhie.org/fhir/food-allergy/Questionnaire/food-allergy-questionnaire#vs-food-allergy-cont"/>
+    <fullUrl value="http://example.com/fhir/testable/Questionnaire/food-allergy-questionnaire#vs-food-allergy-cont"/>
     <resource>
       <ValueSet>
         <id value="vs-food-allergy-cont"/>
@@ -118,7 +118,7 @@
             </table>
           </div>
         </text>
-        <url value="http://openhie.org/fhir/food-allergy/Questionnaire/food-allergy-questionnaire#vs-food-allergy-cont"/>
+        <url value="http://example.com/fhir/testable/Questionnaire/food-allergy-questionnaire#vs-food-allergy-cont"/>
         <version value="1.0.0"/>
         <name value="FoodAllergyVS"/>
         <status value="active"/>
@@ -184,7 +184,7 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="http://openhie.org/fhir/food-allergy/Questionnaire/food-allergy-questionnaire#vs-food-allergy-verifstatus-cont"/>
+    <fullUrl value="http://example.com/fhir/testable/Questionnaire/food-allergy-questionnaire#vs-food-allergy-verifstatus-cont"/>
     <resource>
       <ValueSet>
         <id value="vs-food-allergy-verifstatus-cont"/>
@@ -223,7 +223,7 @@
             </table>
           </div>
         </text>
-        <url value="http://openhie.org/fhir/food-allergy/Questionnaire/food-allergy-questionnaire#vs-food-allergy-verifstatus-cont"/>
+        <url value="http://example.com/fhir/testable/Questionnaire/food-allergy-questionnaire#vs-food-allergy-verifstatus-cont"/>
         <version value="1.0.0"/>
         <name value="FoodAllergyVerificationStatusVS"/>
         <status value="active"/>
@@ -244,7 +244,7 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="http://openhie.org/fhir/food-allergy/Questionnaire/food-allergy-questionnaire#vs-food-allergy-clinstatus-cont"/>
+    <fullUrl value="http://example.com/fhir/testable/Questionnaire/food-allergy-questionnaire#vs-food-allergy-clinstatus-cont"/>
     <resource>
       <ValueSet>
         <id value="vs-food-allergy-clinstatus-cont"/>
@@ -283,7 +283,7 @@
             </table>
           </div>
         </text>
-        <url value="http://openhie.org/fhir/food-allergy/Questionnaire/food-allergy-questionnaire#vs-food-allergy-clinstatus-cont"/>
+        <url value="http://example.com/fhir/testable/Questionnaire/food-allergy-questionnaire#vs-food-allergy-clinstatus-cont"/>
         <version value="1.0.0"/>
         <name value="FoodAllergyVS"/>
         <status value="active"/>
@@ -421,7 +421,7 @@
         <name value="FoodAllergyVS"/>
         <title value="Food Allergies"/>
         <status value="active"/>
-        <date value="2022-11-17T16:05:46+00:00"/>
+        <date value="2022-11-17T16:07:39+00:00"/>
         <publisher value="My Organization"/>
         <contact>
           <name value="My Organization"/>
@@ -451,8 +451,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:a529c164-77d6-48b8-8de9-bb91c82d286d"/>
-          <timestamp value="2022-11-17T16:06:14+00:00"/>
+          <identifier value="urn:uuid:2179b092-f748-42df-bf21-630413f2627a"/>
+          <timestamp value="2022-11-17T16:07:58+00:00"/>
           <total value="11"/>
           <parameter>
             <name value="excludeNested"/>

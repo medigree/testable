@@ -3,9 +3,9 @@
   "id": "testable",
   "text": {
     "status": "extensions",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>TestableIG</h2><p>The official URL for this implementation guide is: </p><pre>http://example.com/fhir/testable</pre><div><p>Testable IG.</p>\n</div></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>TestableIG</h2><p>The official URL for this implementation guide is: </p><pre>http://example.com/fhir/testable/ImplementationGuide/testable</pre><div><p>Testable IG.</p>\n</div></div>"
   },
-  "url": "http://example.com/fhir/testable",
+  "url": "http://example.com/fhir/testable/ImplementationGuide/testable",
   "version": "1.0.0",
   "name": "TestableIG",
   "title": "HL7 FHIR Testable Implementation Guide",
@@ -195,7 +195,7 @@
           },
           {
             "url": "value",
-            "valueString": "history.html"
+            "valueString": "http://example.com/fhir/testable/history.html"
           }
         ],
         "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
@@ -685,7 +685,7 @@
           "system": "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
           "code": "path-history"
         },
-        "value": "history.html"
+        "value": "http://example.com/fhir/testable/history.html"
       },
       {
         "code": {
