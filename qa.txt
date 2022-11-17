@@ -1,13 +1,13 @@
 ﻿TestableIG : Validation Results
 =========================================
 
-err = 4, warn = 23, info = 0
+err = 0, warn = 22, info = 0
 IG Publisher Version: 1.2.15
-Generated Thu Nov 17 16:06:33 UTC 2022. FHIR version 5.0.0-ballot for testable#1.0.0 (canonical = http://example.com/fhir/testable)
- Build Errors : 0 / 5 / 0
+Generated Thu Nov 17 16:08:14 UTC 2022. FHIR version 5.0.0-ballot for testable#1.0.0 (canonical = http://example.com/fhir/testable)
+ Build Errors : 0 / 4 / 0
  /github/workspace/fsh-generated/resources/AllergyIntolerance-MyPeanutAllergy : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/ImplementationGuide-testable : 2 / 0 / 1
- /github/workspace/fsh-generated/resources/Questionnaire-food-allergy-questionnaire : 2 / 13 / 4
+ /github/workspace/fsh-generated/resources/ImplementationGuide-testable : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Questionnaire-food-allergy-questionnaire : 0 / 13 / 4
  /github/workspace/fsh-generated/resources/StructureDefinition-FoodAllergy : 0 / 2 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-FoodAllergyModel : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-TestPlan : 0 / 0 / 1
@@ -15,17 +15,13 @@ Generated Thu Nov 17 16:06:33 UTC 2022. FHIR version 5.0.0-ballot for testable#1
  /github/workspace/fsh-generated/resources/ValueSet-FoodAllergyVS : 0 / 1 / 1
 </table>
 == n/a ==
-WARNING: ImplementationGuide.url: The canonical URL for an Implementation Guide must point directly to the implementation guide resource, not to the Implementation Guide as a whole
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource AllergyIntolerance/MyPeanutAllergy.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
 WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
 == fsh-generated/resources/AllergyIntolerance-MyPeanutAllergy.json ==
 == fsh-generated/resources/ImplementationGuide-testable.json ==
-ERROR: ImplementationGuide.where(url = 'http://example.com/fhir/testable'): Conformance resource /github/workspace/fsh-generated/resources/ImplementationGuide-testable.json - the canonical URL (http://example.com/fhir/testable/ImplementationGuide/testable) does not match the URL (http://example.com/fhir/testable)
-ERROR: /github/workspace/fsh-generated/resources/ImplementationGuide-testable: URL Mismatch http://example.com/fhir/testable/ImplementationGuide/testable vs http://example.com/fhir/testable
 == fsh-generated/resources/Questionnaire-food-allergy-questionnaire.json ==
-ERROR: Questionnaire.where(url = 'http://openhie.org/fhir/food-allergy/Questionnaire/food-allergy-questionnaire'): Conformance resource /github/workspace/fsh-generated/resources/Questionnaire-food-allergy-questionnaire.json - the canonical URL (http://example.com/fhir/testable/Questionnaire/food-allergy-questionnaire) does not match the URL (http://openhie.org/fhir/food-allergy/Questionnaire/food-allergy-questionnaire)
 WARNING: Questionnaire/food-allergy-questionnaire: Questionnaire.item[0].linkId: Rule que-15: 'Link ids should be 255 characters or less' Failed
 WARNING: Questionnaire/food-allergy-questionnaire: Questionnaire.item[1].linkId: Rule que-15: 'Link ids should be 255 characters or less' Failed
 WARNING: Questionnaire/food-allergy-questionnaire: Questionnaire.item[2].linkId: Rule que-15: 'Link ids should be 255 characters or less' Failed
@@ -39,7 +35,6 @@ WARNING: Questionnaire/food-allergy-questionnaire: Questionnaire.item[9].linkId:
 WARNING: Questionnaire/food-allergy-questionnaire: Questionnaire.item[9].item[0].linkId: Rule que-15: 'Link ids should be 255 characters or less' Failed
 WARNING: Questionnaire/food-allergy-questionnaire: Questionnaire.item[9].item[1].linkId: Rule que-15: 'Link ids should be 255 characters or less' Failed
 WARNING: Questionnaire/food-allergy-questionnaire: Questionnaire.item[9].item[2].linkId: Rule que-15: 'Link ids should be 255 characters or less' Failed
-ERROR: /github/workspace/fsh-generated/resources/Questionnaire-food-allergy-questionnaire: URL Mismatch http://example.com/fhir/testable/Questionnaire/food-allergy-questionnaire vs http://openhie.org/fhir/food-allergy/Questionnaire/food-allergy-questionnaire
 == fsh-generated/resources/StructureDefinition-FoodAllergy.json ==
 WARNING: StructureDefinition/FoodAllergy: StructureDefinition.snapshot.element[0]: Rule eld-27: 'Mappings SHOULD be unique by key' Failed
 WARNING: StructureDefinition/FoodAllergy: StructureDefinition.snapshot.element[16]: Rule eld-27: 'Mappings SHOULD be unique by key' Failed

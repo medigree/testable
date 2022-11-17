@@ -10,9 +10,9 @@
   fhir:Resource.id [ fhir:value "testable"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "extensions" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>TestableIG</h2><p>The official URL for this implementation guide is: </p><pre>http://example.com/fhir/testable</pre><div><p>Testable IG.</p>\n</div></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>TestableIG</h2><p>The official URL for this implementation guide is: </p><pre>http://example.com/fhir/testable/ImplementationGuide/testable</pre><div><p>Testable IG.</p>\n</div></div>"
   ];
-  fhir:ImplementationGuide.url [ fhir:value "http://example.com/fhir/testable"];
+  fhir:ImplementationGuide.url [ fhir:value "http://example.com/fhir/testable/ImplementationGuide/testable"];
   fhir:ImplementationGuide.version [ fhir:value "1.0.0"];
   fhir:ImplementationGuide.name [ fhir:value "TestableIG"];
   fhir:ImplementationGuide.title [ fhir:value "HL7 FHIR Testable Implementation Guide"];
@@ -190,7 +190,7 @@
        ], [
          fhir:index 1;
          fhir:Extension.url [ fhir:value "value" ];
-         fhir:Extension.valueString [ fhir:value "history.html" ]
+         fhir:Extension.valueString [ fhir:value "http://example.com/fhir/testable/history.html" ]
        ];
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
@@ -667,7 +667,7 @@
          fhir:Coding.system [ fhir:value "http://hl7.org/fhir/tools/CodeSystem/ig-parameters" ];
          fhir:Coding.code [ fhir:value "path-history" ]
        ];
-       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "history.html" ]
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "http://example.com/fhir/testable/history.html" ]
      ], [
        fhir:index 25;
        fhir:ImplementationGuide.definition.parameter.code [
