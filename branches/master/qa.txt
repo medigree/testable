@@ -1,10 +1,10 @@
 ﻿TestableIG : Validation Results
 =========================================
 
-err = 0, warn = 22, info = 0
+err = 0, warn = 22, info = 1
 IG Publisher Version: 1.2.15
-Generated Thu Nov 17 16:08:14 UTC 2022. FHIR version 5.0.0-ballot for testable#1.0.0 (canonical = http://example.com/fhir/testable)
- Build Errors : 0 / 4 / 0
+Generated Fri Nov 18 09:17:48 UTC 2022. FHIR version 5.0.0-ballot for testable#1.0.0 (canonical = http://example.com/fhir/testable)
+ Build Errors : 1 / 4 / 1
  /github/workspace/fsh-generated/resources/AllergyIntolerance-MyPeanutAllergy : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ImplementationGuide-testable : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Questionnaire-food-allergy-questionnaire : 0 / 13 / 4
@@ -16,6 +16,8 @@ Generated Thu Nov 17 16:08:14 UTC 2022. FHIR version 5.0.0-ballot for testable#1
 </table>
 == n/a ==
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource AllergyIntolerance/MyPeanutAllergy.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+INFORMATION: /github/workspace/output/apps/index.html: The html source does not contain the publish box; this is recommended for publishing support
+ERROR: /github/workspace/output/apps/index.html#/html/head/meta/meta/link/link/body/div/div/div/div/div/p/br/br/br/a at Line 30, column 54: The link '../' for "Open Server home  null" cannot be resolved
 WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
 WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide

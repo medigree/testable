@@ -1,6 +1,6 @@
 ﻿<!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<!-- broken links = errors = 0, warn = 22, info = 0, 0 -->
+<!-- broken links = errors = 0, warn = 22, info = 1, 1 -->
 <head>
   <title>TestableIG : Validation Results</title>
   <link href="fhir.css" rel="stylesheet"/>
@@ -36,12 +36,12 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Validation Results for TestableIG</h1>
- <p>Generated Thu Nov 17 16:08:14 UTC 2022, FHIR version 5.0.0-ballot for testable#1.0.0 (canonical = <a href="http://example.com/fhir/testable">http://example.com/fhir/testable</a> (<a href="http://example.com/fhir/testable/history.html">history</a>)). See <a href="qa.html">Full QA Report</a></p>
+ <p>Generated Fri Nov 18 09:17:48 UTC 2022, FHIR version 5.0.0-ballot for testable#1.0.0 (canonical = <a href="http://example.com/fhir/testable">http://example.com/fhir/testable</a> (<a href="http://example.com/fhir/testable/history.html">history</a>)). See <a href="qa.html">Full QA Report</a></p>
 <table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
  <tr><td>Publisher Version:</td><td><span>IG Publisher Version: v1.2.15</span></td></tr>
  <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = testable, Canonical = http://example.com/fhir/testable</td></tr>
  <tr><td>Realm Check for n/a:</td><td><span style="color: maroon; font-weight: bold"></span><ul><li>n/a</li></ul></td></tr>
- <tr><td>Publication Request:</td><td><ul><li><span title="Invalid HTTP response 404 from http://example.com/fhir/testable/package-list.json?nocache=1668701294047 (Not Found) (content in /tmp/fhir-http-5.log)">This IG has never been published</span> <img src="information.png" height="16px" width="16px"/></li>
+ <tr><td>Publication Request:</td><td><ul><li><span title="Invalid HTTP response 404 from http://example.com/fhir/testable/package-list.json?nocache=1668763068124 (Not Found) (content in /tmp/fhir-http-5.log)">This IG has never been published</span> <img src="information.png" height="16px" width="16px"/></li>
 <li>This IG has never been published, so the version should start with 0. <img src="icon-warning.png" height="16px" width="16px"/></li>
 <li>No publication request found <img src="information.png" height="16px" width="16px"/></li>
 </ul>
@@ -56,16 +56,16 @@
  <tr><td>HTA Analysis:</td><td><i>Non-HL7 Igs are exempt from terminology dependency analysis</i></td></tr>
  <tr><td>R5 Dependencies:</td><td><span style="color: grey">(none)</span></td></tr>
  <tr><td>Modifier Extensions:</td><td><span style="color: grey">(none)</span></td></tr>
- <tr><td>Previous Version Comparison:</td><td> Unable to compare with previous version: Unable to find version history at http://example.com/fhir/testable (Problem #1 with package-list.json at http://example.com/fhir/testable: Invalid HTTP response 404 from http://example.com/fhir/testable/package-list.json?nocache=1668701258676 (Not Found) (content in /tmp/fhir-http-3.log))</td></tr>
+ <tr><td>Previous Version Comparison:</td><td> Unable to compare with previous version: Unable to find version history at http://example.com/fhir/testable (Problem #1 with package-list.json at http://example.com/fhir/testable: Invalid HTTP response 404 from http://example.com/fhir/testable/package-list.json?nocache=1668763040911 (Not Found) (content in /tmp/fhir-http-3.log))</td></tr>
  <tr><td>IPA Comparison:</td><td> n/a</td></tr>
- <tr><td>Summary:</td><td> errors = 0, warn = 22, info = 0, broken links = 0</td></tr>
+ <tr><td>Summary:</td><td> errors = 0, warn = 22, info = 1, broken links = 1</td></tr>
 </table>
  <table class="grid">
    <tr>
      <td><b>Filename</b></td><td><b>Errors</b></td><td><b>Warnings</b></td><td><b>Hints</b></td>
    </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>0</b></td><td><b>4</b></td><td><b>0</b></td>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>1</b></td><td><b>4</b></td><td><b>1</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
      <td><a href="#_github_workspace_fsh-generated_resources_Questionnaire-food-allergy-questionnaire"><b>/github/workspace/fsh-generated/resources/Questionnaire-food-allergy-questionnaire</b></a></td><td><b>0</b></td><td><b>13</b></td><td><b>0</b></td>
@@ -87,6 +87,12 @@
  <table class="grid">
    <tr style="background-color: #ffebcc">
      <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource AllergyIntolerance/MyPeanutAllergy.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>output/apps/index.html</b></td><td><b>information</b></td><td title=""><b>The html source does not contain the publish box; this is recommended for publishing support  (see note at http://wiki.hl7.org/index.php?title=FHIR_Implementation_Guide_Publishing_Requirements#HL7_HTML_Standards_considerations). Note that this is mandatory for HL7 specifications, and on the ci-build, but in other cases it's still recommended (this is only reported once, but applies for all pages)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="apps/index.html#l58">output/apps/index.html#/html/head/meta/meta/link/link/body/div/div/div/div/div/p/br/br/br/a at Line 30, column 54</a></b></td><td><b>error</b></td><td><b>The link '../' for &quot;Open Server home  null&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>1</b></td><td><b>warning</b></td><td title=""><b>The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide</b></td>
