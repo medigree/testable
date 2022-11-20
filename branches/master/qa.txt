@@ -2,8 +2,8 @@
 =========================================
 
 err = 0, warn = 22, info = 1
-IG Publisher Version: 1.2.15
-Generated Fri Nov 18 09:17:48 UTC 2022. FHIR version 5.0.0-ballot for testable#1.0.0 (canonical = http://example.com/fhir/testable)
+IG Publisher Version: 1.2.17
+Generated Sun Nov 20 07:23:11 UTC 2022. FHIR version 5.0.0-ballot for testable#1.0.0 (canonical = http://example.com/fhir/testable)
  Build Errors : 1 / 4 / 1
  /github/workspace/fsh-generated/resources/AllergyIntolerance-MyPeanutAllergy : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ImplementationGuide-testable : 0 / 0 / 1
