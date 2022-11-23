@@ -3,9 +3,9 @@
   "name": "TestableIG",
   "package-id": "testable",
   "ig-ver": "1.0.0",
-  "date": "Wed, 23 Nov, 2022 07:28:11 +0000",
+  "date": "Wed, 23 Nov, 2022 07:28:15 +0000",
   "errs": 0,
-  "warnings": 22,
+  "warnings": 24,
   "hints": 1,
   "version": "5.0.0-ballot",
   "tool": "5.0.0-ballot (3)"
