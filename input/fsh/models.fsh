@@ -63,9 +63,3 @@ Description:    "Test Plan"
     * content 0..1 Reference "The actual test resources when they exist"
     * source[x] 0..1 string or Reference "Pointer to a definition of test resources - narrative or structured e.g. synthetic data generation, et."
   * assertions 0..* BackboneElement "The test data used in the test case"
-
-
-Extension: RenderingTemplate
-Description: "Rendering Template"
-* value[x] only Expression
-* valueExpression.language = #application/liquid
