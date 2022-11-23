@@ -28,6 +28,13 @@
     "name": "FoodAllergyModel"
   },
   {
+    "id": "RenderingTemplate",
+    "type": "StructureDefinition",
+    "url": "http://example.com/fhir/testable/StructureDefinition/RenderingTemplate",
+    "version": "1.0.0",
+    "name": "RenderingTemplate"
+  },
+  {
     "id": "TestPlan",
     "type": "StructureDefinition",
     "url": "http://example.com/fhir/testable/StructureDefinition/TestPlan",

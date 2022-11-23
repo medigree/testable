@@ -3,7 +3,23 @@
   "version": "1.0.0",
   "fhirVersion": "5.0.0-ballot",
   "jurisdiction": "001",
-  "extensions": [],
+  "extensions": [
+    {
+      "url": "http://example.com/fhir/testable/StructureDefinition/RenderingTemplate",
+      "title": "RenderingTemplate",
+      "types": [
+        "Expression",
+        "Expression",
+        "id",
+        "Extension",
+        "string",
+        "id",
+        "code",
+        "string",
+        "uri"
+      ]
+    }
+  ],
   "profiles": {
     "AllergyIntolerance": [
       {

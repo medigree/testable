@@ -1,15 +1,16 @@
 ﻿TestableIG : Validation Results
 =========================================
 
-err = 0, warn = 22, info = 1
+err = 0, warn = 24, info = 1
 IG Publisher Version: 1.2.19
-Generated Wed Nov 23 07:28:39 UTC 2022. FHIR version 5.0.0-ballot for testable#1.0.0 (canonical = http://example.com/fhir/testable)
+Generated Wed Nov 23 07:28:45 UTC 2022. FHIR version 5.0.0-ballot for testable#1.0.0 (canonical = http://example.com/fhir/testable)
  Build Errors : 1 / 4 / 1
  /github/workspace/fsh-generated/resources/AllergyIntolerance-MyPeanutAllergy : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ImplementationGuide-testable : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Questionnaire-food-allergy-questionnaire : 0 / 13 / 4
  /github/workspace/fsh-generated/resources/StructureDefinition-FoodAllergy : 0 / 2 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-FoodAllergyModel : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-RenderingTemplate : 0 / 2 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-TestPlan : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/TestScript-read-validate-patient-json : 0 / 2 / 1
  /github/workspace/fsh-generated/resources/ValueSet-FoodAllergyVS : 0 / 1 / 1
@@ -41,6 +42,9 @@ WARNING: Questionnaire/food-allergy-questionnaire: Questionnaire.item[9].item[2]
 WARNING: StructureDefinition/FoodAllergy: StructureDefinition.snapshot.element[0]: Rule eld-27: 'Mappings SHOULD be unique by key' Failed
 WARNING: StructureDefinition/FoodAllergy: StructureDefinition.snapshot.element[16]: Rule eld-27: 'Mappings SHOULD be unique by key' Failed
 == fsh-generated/resources/StructureDefinition-FoodAllergyModel.json ==
+== fsh-generated/resources/StructureDefinition-RenderingTemplate.json ==
+WARNING: StructureDefinition/RenderingTemplate: StructureDefinition: Rule sdf-29: 'Elements in Resources must have a min cardinality or 0 or 1 and a max cardinality of 1 or *' Failed
+WARNING: StructureDefinition.where(url = 'http://example.com/fhir/testable/StructureDefinition/RenderingTemplate'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-TestPlan.json ==
 == fsh-generated/resources/TestScript-read-validate-patient-json.json ==
 WARNING: TestScript/read-validate-patient-json: TestScript: Rule cnl-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
