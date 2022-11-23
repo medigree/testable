@@ -30,28 +30,30 @@ Description:    "Test Plan"
 * date 0..* dateTime "date"
 * publisher 0..* string "Publisher"
 * contact 0..* ContactDetail "Contact"
-* description 0..* markdown "Description"
+* description 0..1 markdown "Description"
 * jurisdiction 0..* CodeableConcept "Jurisdiction"
-* purpose 0..* markdown "purpose"
-* copyright 0..* markdown "Copyright"
+* purpose 0..1 markdown "purpose"
+* copyright 0..1 markdown "Copyright"
 
 * category 0..* CodeableConcept "The category of the Test Plan - can be acceptance, unit, performance,..."
 * scope 0..* Reference "What is being tested with this Test Plan - a conformance resource, or narrative criteria, or an external reference..."
 
 
-* testTools 0..* markdown "A description of test tools to be used in the test plan - narrative for now"
+* testTools 0..1 markdown "A description of test tools to be used in the test plan - narrative for now"
 
-* enterCriteria 0..* BackboneElement "The required criteria to execute the test plan - e.g. preconditions, previous tests..."
+* dependencies 0..* BackboneElement "The required criteria to execute the test plan - e.g. preconditions, previous tests..."
   * description 0..1 markdown "description of the criteria"
   * predecessor 0..1 Reference "link to predecessor test plans"
 
-* successCriteria 0..* markdown "The threshold or criteria for the test plan to be considered successfully executed - narrative"
+* exitCriteria 0..1 markdown "The threshold or criteria for the test plan to be considered successfully executed - narrative"
 
 * testCase 0..* BackboneElement "The test cases that are part of this plan"
   * sequence 0..1 integer "Sequence of testing"
   * scope 0..* Reference "Specific test scope for one test case"
-  * dependencies 0..* string "Any dependencies required for the test case"
-  * content 0..* Reference "Specific test scope for one test case"
+  * dependencies 0..* BackboneElement "The required criteria to execute the test case - e.g. preconditions, previous tests..."
+    * description 0..1 markdown "description of the criteria"
+    * predecessor 0..1 Reference "link to predecessor test plans"
+  * testRun 0..* Reference "The actual test to be executed"
     * narrative 0..1 markdown "The narrative description of the tests"
     * script 0..1 BackboneElement "The test cases in a structured language e.g. gherkin, Postman, or FHIR TestScript"
       * language 0..1 CodeableConcept "The language for the test cases e.g. 'gherkin', 'testscript'"
@@ -60,3 +62,10 @@ Description:    "Test Plan"
     * type 1..1 Coding "The type of test data description, e.g. 'synthea'"
     * content 0..1 Reference "The actual test resources when they exist"
     * source[x] 0..1 string or Reference "Pointer to a definition of test resources - narrative or structured e.g. synthetic data generation, et."
+  * assertions 0..* BackboneElement "The test data used in the test case"
+
+
+Extension: RenderingTemplate
+Description: "Rendering Template"
+* value[x] only Expression
+* valueExpression.language = #application/liquid
